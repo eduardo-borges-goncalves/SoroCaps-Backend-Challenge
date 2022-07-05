@@ -1,11 +1,16 @@
 import { Request, Response, NextFunction } from "express"
 
+type ProductSales = {
+    code: string, 
+    name: string, 
+    salesOrderPrice: number
+    quantity: number, 
+}
+
 interface SalesOrder {
     saleOrderId: string, 
     client: string, 
-    products: string[], 
-    salePrice: number, 
-    quantity: number, 
+    products: ProductSales[], 
     status: string, 
 }
 

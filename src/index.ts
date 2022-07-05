@@ -6,7 +6,9 @@ const app = express()
 
 // create routes
 
+// create auth service
 
+// create swager
 
 
 app.listen(PORT, () => console.log(`Server is running at port ${PORT}`))

@@ -1,12 +1,12 @@
 import { Request, Response, NextFunction } from "express"
 
 interface Product {
-    productId: string, 
     code: string, 
+    name: string, 
     description: string, 
     measurementUnity: string, 
     purchasePrice: number, 
-    orderSale: number, 
+    salesPrice: number, 
 }
 
 export const getProducts = (req: Request, res: Response, next: NextFunction) => {
