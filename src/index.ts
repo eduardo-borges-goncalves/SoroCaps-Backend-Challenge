@@ -1,5 +1,5 @@
 import express from "express"
-import { router } from "./routes"
+import router from "./routes"
 
 import "./config/env";
 
@@ -17,4 +17,7 @@ const app = express()
 
 app.use(router)
 
-app.listen(PORT, () => console.log(`Server is running at port ${PORT}`))
+app.listen(
+  process.env.PORT, 
+  () => console.log(`Server is running at port ${process.env.PORT}`)
+)

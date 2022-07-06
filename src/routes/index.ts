@@ -7,28 +7,29 @@ import { getSalesOrders, getSalesOrder, postSalesOrder, updateSalesOrder, delete
 
 const router = express.Router();
 
-router.get('/user', getUsers());
-router.get('/user', getUser());
-router.post('/user', postUser());
-router.put('/user', updateUser());
-router.delete('/user', deleteUser());
+// router.get('/', () => console.log("hello"));
+router.get('/user', getUsers);
+router.get('/user', getUser);
+router.post('/user', postUser);
+router.put('/user', updateUser);
+router.delete('/user', deleteUser);
 
-router.get('/client', getClients());
-router.get('/client', getClient());
-router.post('/client', postClient());
-router.put('/client', updateClient());
-router.delete('/client', deleteClient());
+router.get('/client', getClients);
+router.get('/client', getClient);
+router.post('/client', postClient);
+router.put('/client', updateClient);
+router.delete('/client', deleteClient);
 
-router.get('/product', getProducts());
-router.get('/product', getProduct());
-router.post('/product', postProduct());
-router.put('/product', updateProduct());
-router.delete('/product', deleteProduct());
+router.get('/product', getProducts);
+router.get('/product', getProduct);
+router.post('/product', postProduct);
+router.put('/product', updateProduct);
+router.delete('/product', deleteProduct);
 
-router.get('/sales-order', getSalesOrders());
-router.get('/sales-order', getSalesOrder());
-router.post('/sales-order', postSalesOrder());
-router.put('/sales-order', updateSalesOrder());
-router.delete('/sales-order', deleteSalesOrder());
+router.get('/sales-order', getSalesOrders);
+router.get('/sales-order', getSalesOrder);
+router.post('/sales-order', postSalesOrder);
+router.put('/sales-order', updateSalesOrder);
+router.delete('/sales-order', deleteSalesOrder);
 
-export const router; 
+export default  router; 
