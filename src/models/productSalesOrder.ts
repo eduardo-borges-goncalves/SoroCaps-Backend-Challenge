@@ -1,7 +1,7 @@
 import { DataTypes  } from "sequelize/types";
 import { database } from "../db";
 
-export const ProductSalesModel = database.define('product', {
+export const ProductSalesOrderModel = database.define('product', {
   codeProduct: {
     type: DataTypes.STRING, 
     autoIncrement: true, 
@@ -26,8 +26,8 @@ export const ProductSalesModel = database.define('product', {
   }
 })
 
-ProductSalesModel.associate = (models: any) => {
-  ProductSalesModel.belongsTo(models.SalesOrderModel, {
+ProductSalesOrderModel.associate = (models: any) => {
+  ProductSalesOrderModel.belongsTo(models.SalesOrderModel, {
     as: "salesOrder", 
     foreignkey: "salesOrderId"
   })

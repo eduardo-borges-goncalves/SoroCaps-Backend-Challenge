@@ -35,7 +35,9 @@ SalesOrderModel.associate = (models: any) => {
 
 // cadastrar um cliente 
 
-// front cria salesOrderId
+// front solicita novo pedido de venda 
+// back cria pedido de venda e devolve id pro front
 // front cria os produtos de venda com o salesOrderId
-// front envia o cadastro dos produtos e do pedido de venda para o back 
+// front envia o cadastro dos produtos para o back 
 
+// COMO O FRONT VAI CRIAR O ID SENDO QUE ELE NÃO SABE SE AQUELE ID EXISTE OU NAO?
