@@ -1,13 +1,17 @@
 import express from "express"
 import router from "./routes"
 
+const database = require( "./db")
+
 import "./config/env";
 
 const app = express()
 
-// conect with database 
-
 // create routes
+
+// create models
+
+// register first model at database
 
 // create auth service
 
