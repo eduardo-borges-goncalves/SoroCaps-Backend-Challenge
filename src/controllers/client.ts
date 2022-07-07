@@ -49,7 +49,7 @@ export const postClient = async (req: Request, res: Response, next: NextFunction
             res.status(400).send({ error: "Propriedade necessária à criação de cliente ausente" })
         }
         const client = await ClientModel.create({ companyName, cnpj, address })
-
+   
         return res.status(201).json({
             data: client
         })
