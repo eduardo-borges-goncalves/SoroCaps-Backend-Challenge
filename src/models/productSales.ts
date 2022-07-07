@@ -16,15 +16,19 @@ export const ProductSalesModel = database.define('product', {
     type: DataTypes.INTEGER, 
     allowNull: false 
   },
-  salesId: {
+  salesOrderId: {
     type: DataTypes.INTEGER, 
     allowNull: false,
+    references : {
+      model: "SalesOrderModel", 
+      key: "id"
+    }
   }
 })
 
 ProductSalesModel.associate = (models: any) => {
   ProductSalesModel.belongsTo(models.SalesOrderModel, {
     as: "salesOrder", 
-    foreignkey: "salesId"
+    foreignkey: "salesOrderId"
   })
 }
