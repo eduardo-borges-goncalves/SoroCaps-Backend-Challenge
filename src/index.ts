@@ -18,6 +18,7 @@ const app = express()
 
 // npm i bcrypt  @types/bcrypt -D - criptografar senha do usuário 
 
+app.use(cors({ credentials: true, origin: true }));
 app.use(router)
 app.use(json())
 
