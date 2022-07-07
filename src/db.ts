@@ -1,18 +1,17 @@
 const { Sequelize } = require('sequelize');
 
-const sequelize = new Sequelize("SoroCap", "root", "12345678",
+export const database = new Sequelize(
+  "SoroCap", 
+  "root", 
+  "12345678",
   {
     host: "localhost",
     dialect: "mysql",
   })
 
-sequelize.sync();
 
-// sequelize.authenticate()
+
+// database.authenticate()
 //   .then(() => console.log("Connect to database"))
 //   .catch(() => console.log("Error to connect with database"))
-
-module.exports = sequelize;
-
-
 
