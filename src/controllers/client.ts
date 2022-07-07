@@ -1,48 +1,97 @@
 import { Request, Response, NextFunction } from "express"
+import { ClientModel } from "../models/client"
 
 interface Client {
-    clientId: string, 
-    companyName: string, 
-    cnpj: string, 
-    address: string, 
+    clientId: string,
+    companyName: string,
+    cnpj: string,
+    address: string,
 }
 
-export const getClients = (req: Request, res: Response, next: NextFunction) => {
-    const clients = "" // escrever método que PEGA clients do DB
+export const getClients = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+        const clients = await ClientModel.findAll()
+        if (clients.length === 0) {
+            return res.status(204).send({ message: "Nenhum cliente cadastrado" })
+        }
 
-    return res.status(200).json({
-        data: clients
-    })
+        return res.status(200).json({
+            data: clients
+        })
+    } catch (error: any) {
+        return next(new Error(error))
+    }
 }
 
-export const getClient = (req: Request, res: Response, next: NextFunction) => {
-    const client = "" // escrever método que PEGA client do DB
+export const getClient = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+        const clientId = req.params.id // conferir se id vai vir ir ou clientId
 
-    return res.status(200).json({
-        data: client
-    })
+        const client = await ClientModel.findOne({
+            where: { clientId }
+        })
+        if (!client) {
+            return res.status(400).send({ error: "Cliente não encontrado" });
+        }
+
+        return res.status(200).json({
+            data: client
+        })
+    } catch (error: any) {
+        return next(new Error(error))
+    }
 }
 
-export const postClient = (req: Request, res: Response, next: NextFunction) => {
-    const client = "" // escrever método que CRIA client do DB
+export const postClient = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+        const { companyName, cnpj, address } = req.body;
+        const client = await ClientModel.create({ companyName, cnpj, address })
 
-    return res.status(201).json({
-        data: client
-    })
+        return res.status(201).json({
+            data: client
+        })
+    } catch (error) {
+        return next(new Error(error));
+    }
 }
 
-export const updateClient = (req: Request, res: Response, next: NextFunction) => {
-    const client = "" // escrever método que ATUALIZA client do DB
+export const updateClient = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+        const clientId = req.params.id
+        const client = await ClientModel.findOne({
+            where: { id: clientId }
+        })
+        if (!client) {
+            res.status(400).send({ error: "Cliente não encontraod. Id incorreto." })
+        }
 
-    return res.status(201).json({
-        data: client
-    })
+        const { companyName, cnpj, address } = req.body;
+        const updatedClient = await ClientModel.update({
+            companyName: companyName || client.companyName,
+            cnpj: cnpj || client.cnpj,
+            address: address || client.address
+        })
+
+        return res.status(201).json({
+            data: updateClient
+        })
+    } catch (error) {
+        return next(new Error(error))
+    }
 }
 
-export const deleteClient = (req: Request, res: Response, next: NextFunction) => {
-    const client = "" // escrever método que DELETA client do DB
+export const deleteClient = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+        const client = await ClientModel.findOne({ 
+            where: { id: req.params.id } 
+        });
+        if (!client) {
+            return res.status(400).send({ error: 'Cliente não encontrado. Id incorreto' });
+        };
 
-    return res.status(201).json({
-        data: client
-    })
+        await client.destroy
+        return res.status(204).send({})
+    } catch (error) {
+        return next(new Error(error))
+    }
 }
