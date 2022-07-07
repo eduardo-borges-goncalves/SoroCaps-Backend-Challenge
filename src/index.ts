@@ -1,13 +1,16 @@
-import express from "express"
-import { router } from "./routes"
+import express, { json } from "express"
+import router from "./routes"
+import { database  } from "./db";
 
 import "./config/env";
 
 const app = express()
 
-// conect with database 
-
 // create routes
+
+// create models
+
+// register first model at database
 
 // create auth service
 
@@ -16,5 +19,13 @@ const app = express()
 // npm i bcrypt  @types/bcrypt -D - criptografar senha do usuário 
 
 app.use(router)
+app.use(json())
 
-app.listen(PORT, () => console.log(`Server is running at port ${PORT}`))
+app.listen(
+  process.env.PORT, 
+  () => {
+    database.sync(),
+    console.log(`Server is running at port ${process.env.PORT}`)
+  }
+)
+

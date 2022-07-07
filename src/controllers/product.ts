@@ -41,7 +41,7 @@ export const updateProduct = (req: Request, res: Response, next: NextFunction) =
     })
 }
 
-export const deleteClient = (req: Request, res: Response, next: NextFunction) => {
+export const deleteProduct = (req: Request, res: Response, next: NextFunction) => {
     const product = "" // escrever método que DELETA product do DB
 
     return res.status(201).json({
