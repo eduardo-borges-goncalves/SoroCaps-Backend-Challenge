@@ -2,7 +2,7 @@ import { DataTypes  } from "sequelize/types";
 import { database } from "../db";
 
 export const ClientModel = database.define('client', {
-  idClient: {
+  id: {
     type: DataTypes.INTEGER, 
     allowNull: false, 
     autoIncrement: true, 
@@ -20,16 +20,12 @@ export const ClientModel = database.define('client', {
     type: DataTypes.STRING, 
     allowNull: false 
   }, 
-  salesId: {
-    type: DataTypes.INTEGER, 
-    allowNull: false,
-  }
 })
 
 ClientModel.associate = (models: any) => {
   ClientModel.hasMany(models.SalesOrderModel, {
     as: "salesOrder", 
-    foreignKey: "salesId"
+    foreignKey: "clientId"
   })
 }
 
