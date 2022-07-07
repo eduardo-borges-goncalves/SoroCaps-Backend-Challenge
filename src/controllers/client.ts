@@ -45,6 +45,9 @@ export const getClient = async (req: Request, res: Response, next: NextFunction)
 export const postClient = async (req: Request, res: Response, next: NextFunction) => {
     try {
         const { companyName, cnpj, address } = req.body;
+        if (!companyName || !cnpj || !address) {
+            res.status(400).send({ error: "Propriedade necessária à criação de cliente ausente" })
+        }
         const client = await ClientModel.create({ companyName, cnpj, address })
 
         return res.status(201).json({
@@ -62,15 +65,22 @@ export const updateClient = async (req: Request, res: Response, next: NextFuncti
             where: { id: clientId }
         })
         if (!client) {
-            res.status(400).send({ error: "Cliente não encontraod. Id incorreto." })
+            res.status(400).send({ error: "Cliente não encontrado" })
         }
 
         const { companyName, cnpj, address } = req.body;
-        const updatedClient = await ClientModel.update({
-            companyName: companyName || client.companyName,
-            cnpj: cnpj || client.cnpj,
-            address: address || client.address
-        })
+        const updatedClient = await ClientModel.update(
+            {
+                companyName: companyName || client.companyName,
+                cnpj: cnpj || client.cnpj,
+                address: address || client.address
+            },
+            {
+                where: {id: client.id},
+                returning: true,
+                plain: true,               
+            }
+        )
 
         return res.status(201).json({
             data: updateClient
@@ -82,11 +92,11 @@ export const updateClient = async (req: Request, res: Response, next: NextFuncti
 
 export const deleteClient = async (req: Request, res: Response, next: NextFunction) => {
     try {
-        const client = await ClientModel.findOne({ 
-            where: { id: req.params.id } 
+        const client = await ClientModel.findOne({
+            where: { id: req.params.id }
         });
         if (!client) {
-            return res.status(400).send({ error: 'Cliente não encontrado. Id incorreto' });
+            return res.status(400).send({ error: 'Cliente não encontrado' });
         };
 
         await client.destroy

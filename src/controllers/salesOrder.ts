@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from "express"
 
 type ProductSales = {
-    code: string, 
+    codeProduct: string, 
     name: string, 
     salesOrderPrice: number
     quantity: number, 
