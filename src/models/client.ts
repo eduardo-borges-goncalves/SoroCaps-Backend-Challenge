@@ -1,7 +1,7 @@
 import { DataTypes  } from "sequelize/types";
 import { database } from "../db";
 
-export const ClientModel = database.define('client', {
+export const ClientModel = database.define('clients', {
   id: {
     type: DataTypes.INTEGER, 
     allowNull: false, 
@@ -23,7 +23,7 @@ export const ClientModel = database.define('client', {
 })
 
 ClientModel.associate = (models: any) => {
-  ClientModel.hasMany(models.SalesOrderModel, {
+  ClientModel.hasMany(models.sales-orders, {
     as: "salesOrder", 
     foreignKey: "clientId"
   })

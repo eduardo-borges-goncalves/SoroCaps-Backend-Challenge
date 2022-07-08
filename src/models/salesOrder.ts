@@ -1,7 +1,7 @@
 import { DataTypes  } from "sequelize/types";
 import { database } from "../db";
 
-export const SalesOrderModel = database.define('product', {
+export const SalesOrderModel = database.define('sales-orders', {
   id: {
     type: DataTypes.INTEGER, 
     allowNull: false,
@@ -22,14 +22,15 @@ export const SalesOrderModel = database.define('product', {
 })
 
 SalesOrderModel.associate = (models: any) => {
-  SalesOrderModel.belongsTo(models.client, {
+  SalesOrderModel.belongsTo(models.clients, {
     as: "client", 
     foreignKey: "clientId"
   });
 
-  SalesOrderModel.hasMany(models.ProductSalesModel, {
+  SalesOrderModel.hasMany(models.product-sales, {
     as: "productSales", 
-    foreignKey: "salesOrderId"
+    foreignKey: "salesOrderId", 
+    onDelete: "CASCADE"
   })
 }
 
