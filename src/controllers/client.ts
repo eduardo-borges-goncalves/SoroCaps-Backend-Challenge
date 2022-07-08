@@ -53,7 +53,7 @@ export const postClient = async (req: Request, res: Response, next: NextFunction
         return res.status(201).json({
             data: client
         })
-    } catch (error) {
+    } catch (error: any) {
         return next(new Error(error));
     }
 }
@@ -85,7 +85,7 @@ export const updateClient = async (req: Request, res: Response, next: NextFuncti
         return res.status(201).json({
             data: updateClient
         })
-    } catch (error) {
+    } catch (error: any) {
         return next(new Error(error))
     }
 }
@@ -101,7 +101,7 @@ export const deleteClient = async (req: Request, res: Response, next: NextFuncti
 
         await client.destroy
         return res.status(204).send({})
-    } catch (error) {
+    } catch (error: any) {
         return next(new Error(error))
     }
 }

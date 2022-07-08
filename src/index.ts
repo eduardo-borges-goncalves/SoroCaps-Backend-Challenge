@@ -3,12 +3,9 @@ import router from "./routes"
 import { database  } from "./db";
 
 import "./config/env";
+import cors from "cors";
 
 const app = express()
-
-// create routes
-
-// create models
 
 // register first model at database
 

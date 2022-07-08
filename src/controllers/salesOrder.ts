@@ -13,7 +13,7 @@ interface SalesOrder {
     status: string, 
 }
 
-export const getSalesOrders = (req: Request, res: Response, next: NextFunction) => {
+export const getSalesOrders = async (req: Request, res: Response, next: NextFunction) => {
     try {
         const salesOrders = await SalesOrderModel.findAll()
         if (salesOrders.length === 0) {
@@ -28,7 +28,7 @@ export const getSalesOrders = (req: Request, res: Response, next: NextFunction) 
     }
 }
 
-export const getSalesOrder = (req: Request, res: Response, next: NextFunction) => {
+export const getSalesOrder = async (req: Request, res: Response, next: NextFunction) => {
     try {
         const salesOrder = await SalesOrderModel.findOne({
             where: { id: req.params.id }
@@ -45,7 +45,7 @@ export const getSalesOrder = (req: Request, res: Response, next: NextFunction) =
     }
 }
 
-export const postSalesOrder = (req: Request, res: Response, next: NextFunction) => {
+export const postSalesOrder = async (req: Request, res: Response, next: NextFunction) => {
     try {
         const { status, clientId } = req.body;
         if (!status || !clientId) {
@@ -56,12 +56,12 @@ export const postSalesOrder = (req: Request, res: Response, next: NextFunction) 
         return res.status(201).json({
             data: salesOrder
         })
-    } catch (error) {
+    } catch (error: any) {
         return next(new Error(error));
     }
 }
 
-export const updateSalesOrder = (req: Request, res: Response, next: NextFunction) => {
+export const updateSalesOrder = async (req: Request, res: Response, next: NextFunction) => {
     try {
         const salesOrder = await SalesOrderModel.findOne({
             where: { id: req.params.id }
@@ -70,6 +70,7 @@ export const updateSalesOrder = (req: Request, res: Response, next: NextFunction
             return res.status(400).send({ error: 'Pedido de venda não encontrado' });
         }
 
+        const { status, clientId } = req.body;
         const updatedSalesOrder= await SalesOrderModel.update(
             {
                 status: status || salesOrder.status,
@@ -85,12 +86,12 @@ export const updateSalesOrder = (req: Request, res: Response, next: NextFunction
         return res.status(201).json({
             data: updatedSalesOrder
         })
-    } catch (error) {
+    } catch (error: any) {
         return next(new Error(error))
     }
 }
 
-export const deleteSalesOrder = (req: Request, res: Response, next: NextFunction) => {
+export const deleteSalesOrder = async (req: Request, res: Response, next: NextFunction) => {
     try {
         const salesOrder = await SalesOrderModel.findOne({
             where: { id: req.params.id }
@@ -101,7 +102,7 @@ export const deleteSalesOrder = (req: Request, res: Response, next: NextFunction
 
         await salesOrder.destroy
         return res.status(204).send({})
-    } catch (error) {
+    } catch (error: any) {
         return next(new Error(error))
     }
 }

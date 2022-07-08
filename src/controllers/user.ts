@@ -14,7 +14,7 @@ export const getUsers = async (req: Request, res: Response, next: NextFunction) 
         return res.status(200).json({
             data: users
         })
-    } catch (error) {
+    } catch (error: any) {
         return next(new Error(error))
     }
 }
@@ -30,7 +30,7 @@ export const getUser = async (req: Request, res: Response, next: NextFunction) =
             data: user
         })
 
-    } catch (error) {
+    } catch (error: any) {
 
     }
 }
@@ -48,7 +48,7 @@ export const postUser = async (req: Request, res: Response, next: NextFunction) 
             data: user
         })
 
-    } catch (error) {
+    } catch (error: any) {
         return next(new Error(error))
     }
 }
@@ -56,9 +56,9 @@ export const postUser = async (req: Request, res: Response, next: NextFunction) 
 export const updateUser = async (req: Request, res: Response, next: NextFunction) => {
     try {
         const { name, userLogin, password } = req.body
-        const user = findUser(req.params.id)
+        const user = await findUser(req.params.id)
         if (!user) {
-            res.status(400).send9({ error: "Usuário não encontrado" })
+            res.status(400).send({ error: "Usuário não encontrado" })
         }
         const updatedUser = await UserModel.update(
             {
@@ -75,7 +75,7 @@ export const updateUser = async (req: Request, res: Response, next: NextFunction
         return res.status(201).json({
             data: updatedUser
         })
-    } catch (error) {
+    } catch (error: any) {
         return next(new Error(error))
     }
 
@@ -89,12 +89,12 @@ export const deleteUser = async (req: Request, res: Response, next: NextFunction
         }
 
         return res.status(204).send({})
-    } catch (error) {
+    } catch (error: any) {
         return next(new Error(error))
     }
 }
 
-const findUser = async (id) => {
+const findUser = async (id: string) => {
     return await UserModel.findOne({
         where: { id }
     })
