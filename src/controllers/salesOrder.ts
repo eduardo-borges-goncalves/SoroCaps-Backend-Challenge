@@ -1,4 +1,5 @@
 import { Request, Response, NextFunction } from "express"
+import { ProductSalesOrderModel } from "../models/productSalesOrder"
 import { SalesOrderModel } from "../models/salesOrder"
 
 type ProductSales = {
@@ -15,7 +16,12 @@ interface SalesOrder {
 
 export const getSalesOrders = (req: Request, res: Response, next: NextFunction) => {
     try {
-        const salesOrders = await SalesOrderModel.findAll()
+        const salesOrders = await SalesOrderModel.findAll({
+            include: [{
+                model: product-SalesOrderModel, 
+                as: "productSales"
+            }]
+        })
         if (salesOrders.length === 0) {
             return res.status(204).send({ message: "Nenhum pedido de venda cadastrado" })
         }
@@ -31,7 +37,11 @@ export const getSalesOrders = (req: Request, res: Response, next: NextFunction) 
 export const getSalesOrder = (req: Request, res: Response, next: NextFunction) => {
     try {
         const salesOrder = await SalesOrderModel.findOne({
-            where: { id: req.params.id }
+            where: { id: req.params.id }, 
+            include: [{
+                model: product-sales, 
+                as: "productSales"
+            }]
         })
         if (!salesOrder) {
             return res.status(400).send({ error: "Pedido de venda não encontrado" });
@@ -47,14 +57,32 @@ export const getSalesOrder = (req: Request, res: Response, next: NextFunction) =
 
 export const postSalesOrder = (req: Request, res: Response, next: NextFunction) => {
     try {
-        const { status, clientId } = req.body;
-        if (!status || !clientId) {
-            res.status(400).send({ error: "Propriedade necessária à criação do pedido de venda ausente" })
-        }
+        const { status, clientId, products } = req.body;
+        if (!status) res.status(400).send({ error: "Status é necessário à criação do pedido de venda" })
+        if (!clientId) res.status(400).send({ error: "ClientId é necessário à criação do pedido de venda" })
+        if (!products) res.status(400).send({ error: "Produto é necessário à criação do pedido de venda" })
+        
         const salesOrder = await SalesOrderModel.create({ status, clientId })
 
+        products.map(async (product) => {
+            await ProductSalesOrderModel.create({
+                quantity: product.quantity, 
+                codeProduct: product.codeProduct, 
+                salesPrice: product.salesPrice, 
+                salesOrderId: salesOrder.id
+            })
+        })
+
+        const salesOrderWithProducts = await SalesOrderModel.findOne({
+            where: {id: salesOrder.id}, 
+            include: [{
+                model: product-sales, 
+                as: "productSales",
+            }],
+        })
+
         return res.status(201).json({
-            data: salesOrder
+            data: salesOrderWithProducts
         })
     } catch (error) {
         return next(new Error(error));
@@ -105,3 +133,7 @@ export const deleteSalesOrder = (req: Request, res: Response, next: NextFunction
         return next(new Error(error))
     }
 }
+
+// front cria o pedido de venda -> manda pro back
+// front cria os produtos da venda em outra rota 
+// back devolve os produtos somados com o pedido 
