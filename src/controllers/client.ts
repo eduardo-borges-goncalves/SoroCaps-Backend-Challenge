@@ -65,7 +65,7 @@ export const updateClient = async (req: Request, res: Response, next: NextFuncti
             where: { id: clientId }
         })
         if (!client) {
-            res.status(400).send({ error: "Cliente não encontrado" })
+            return res.status(400).send({ error: "Cliente não encontrado" })
         }
 
         const { companyName, cnpj, address } = req.body;
