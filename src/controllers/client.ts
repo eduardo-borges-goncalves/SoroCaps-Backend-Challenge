@@ -98,8 +98,8 @@ export const deleteClient = async (req: Request, res: Response, next: NextFuncti
         if (!client) {
             return res.status(400).send({ error: 'Cliente não encontrado' });
         };
-
-        await client.destroy
+  
+        await client.destroy()
         return res.status(204).send({})
     } catch (error: any) {
         return next(new Error(error))

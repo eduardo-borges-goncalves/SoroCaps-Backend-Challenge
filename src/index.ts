@@ -5,19 +5,24 @@ import { database  } from "./db";
 import "./config/env";
 import cors from "cors";
 
+const bodyParser = require('body-parser')
+
 const app = express()
 
-// register first model at database
-
+// ASSOCIATIONS
 // create auth service
-
 // create swager
-
 // npm i bcrypt  @types/bcrypt -D - criptografar senha do usuário 
 
 app.use(cors({ credentials: true, origin: true }));
-app.use(router)
 app.use(json())
+// parse application/json
+
+
+// parse application/x-www-form-urlencoded
+
+app.use(router)
+
 
 app.listen(
   process.env.PORT, 

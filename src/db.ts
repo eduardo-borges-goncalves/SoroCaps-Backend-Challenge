@@ -1,17 +1,13 @@
 const { Sequelize } = require('sequelize');
+require('dotenv').config()
 
 export const database = new Sequelize(
-  "SoroCap", 
-  "root", 
-  "12345678",
+  process.env.DATABASE_NAME,
+  process.env.DATABASE_USER,
+  process.env.DATABASE_PASS,
   {
-    host: "localhost",
-    dialect: "mysql",
-  })
-
-
-
-// database.authenticate()
-//   .then(() => console.log("Connect to database"))
-//   .catch(() => console.log("Error to connect with database"))
+    host: process.env.DATABASE_HOST,
+    dialect: process.env.DATABASE_DIALECT,
+  }
+)
 

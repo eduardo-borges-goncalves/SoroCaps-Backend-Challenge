@@ -5,6 +5,7 @@ export const SalesOrderModel = database.define('sales-order', {
   id: {
     type: DataTypes.INTEGER, 
     allowNull: false,
+    autoIncrement: true, 
     primaryKey: true,
   },
   status: {

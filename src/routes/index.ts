@@ -8,27 +8,27 @@ import { getSalesOrders, getSalesOrder, postSalesOrder, updateSalesOrder, delete
 const router = express.Router();
 
 router.get('/user', getUsers);
-router.get('/user', getUser);
+router.get('/user/:id', getUser);
 router.post('/user', postUser);
-router.put('/user', updateUser);
-router.delete('/user', deleteUser);
+router.put('/user/:id', updateUser);
+router.delete('/user/:id', deleteUser);
 
 router.get('/client', getClients);
-router.get('/client', getClient);
+router.get('/client/:id', getClient);
 router.post('/client', postClient);
-router.put('/client', updateClient);
-router.delete('/client', deleteClient);
+router.put('/client/:id', updateClient);
+router.delete('/client/:id', deleteClient);
 
 router.get('/product', getProducts);
-router.get('/product', getProduct);
+router.get('/product/:id', getProduct);
 router.post('/product', postProduct);
-router.put('/product', updateProduct);
-router.delete('/product', deleteProduct);
+router.put('/product/:id', updateProduct);
+router.delete('/product/:id', deleteProduct);
 
 router.get('/sales-order', getSalesOrders);
-router.get('/sales-order', getSalesOrder);
+router.get('/sales-order/:id', getSalesOrder);
 router.post('/sales-order', postSalesOrder);
-router.put('/sales-order', updateSalesOrder);
-router.delete('/sales-order', deleteSalesOrder);
+router.put('/sales-order/:id', updateSalesOrder);
+router.delete('/sales-order/:id', deleteSalesOrder);
 
 export default  router; 

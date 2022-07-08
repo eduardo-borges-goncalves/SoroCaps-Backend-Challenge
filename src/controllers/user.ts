@@ -37,9 +37,10 @@ export const getUser = async (req: Request, res: Response, next: NextFunction) =
 
 export const postUser = async (req: Request, res: Response, next: NextFunction) => {
     try {
-        const { name, userLogin, password } = req.body;
+        console.log("req", req.body)
+        const { name, userLogin, password } = req.body
         if (!name || !userLogin || !password) {
-            res.status(400).send({ error: "Usuário não encontrado " })
+            res.status(400).send({ error: "" })
         }
         const user = await UserModel.create({
             name, userLogin, password
@@ -83,11 +84,12 @@ export const updateUser = async (req: Request, res: Response, next: NextFunction
 
 export const deleteUser = async (req: Request, res: Response, next: NextFunction) => {
     try {
-        const user = findUser(req.params.id)
+        const user = await findUser(req.params.id)
         if (!user) {
             res.status(400).send({ error: "Usuário não encontrado" })
         }
 
+        user.destroy()
         return res.status(204).send({})
     } catch (error: any) {
         return next(new Error(error))

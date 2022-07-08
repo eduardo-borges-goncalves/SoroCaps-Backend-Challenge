@@ -1,15 +1,17 @@
 import { Request, Response, NextFunction } from "express"
+import { ProductSalesOrderModel } from "../models/productSalesOrder"
 import { SalesOrderModel } from "../models/salesOrder"
 
 type ProductSales = {
     codeProduct: string, 
     salesOrderPrice: number
     quantity: number, 
+    salesOrderId: number
 }
 
 interface SalesOrder {
     saleOrderId: string, 
-    client: string, 
+    clientId: string, 
     status: string, 
 }
 
@@ -46,12 +48,29 @@ export const getSalesOrder = async (req: Request, res: Response, next: NextFunct
 }
 
 export const postSalesOrder = async (req: Request, res: Response, next: NextFunction) => {
+    // Develop method to create product after create sales order.
     try {
         const { status, clientId } = req.body;
         if (!status || !clientId) {
             res.status(400).send({ error: "Propriedade necessária à criação do pedido de venda ausente" })
         }
+
         const salesOrder = await SalesOrderModel.create({ status, clientId })
+        
+        if (salesOrder.id) {
+            const { products } = req.body;
+            const newProductsDB: ProductSales[] = []
+            products.forEach(async (product: any )=> {
+                newProductsDB.push( await ProductSalesOrderModel.create({
+                    quantity: product.quantity, 
+                    priceSales: product.priceSales, 
+                    salesOrderId: salesOrder.id, 
+                    codeProduct: product.code,
+                }))
+                salesOrder.products = newProductsDB // não funcionou
+            })
+            // acoplar newProductDB pra salesOrder
+        }
 
         return res.status(201).json({
             data: salesOrder
@@ -69,7 +88,7 @@ export const updateSalesOrder = async (req: Request, res: Response, next: NextFu
         if (!salesOrder) {
             return res.status(400).send({ error: 'Pedido de venda não encontrado' });
         }
-
+     
         const { status, clientId } = req.body;
         const updatedSalesOrder= await SalesOrderModel.update(
             {
@@ -100,7 +119,7 @@ export const deleteSalesOrder = async (req: Request, res: Response, next: NextFu
             return res.status(400).send({ error: 'Pedido de venda não encontrado' });
         };
 
-        await salesOrder.destroy
+        await salesOrder.destroy()
         return res.status(204).send({})
     } catch (error: any) {
         return next(new Error(error))
