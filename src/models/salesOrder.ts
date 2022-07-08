@@ -1,7 +1,7 @@
-import { DataTypes  } from "sequelize/types";
+const { DataTypes } = require('sequelize');
 import { database } from "../db";
 
-export const SalesOrderModel = database.define('product', {
+export const SalesOrderModel = database.define('sales-order', {
   id: {
     type: DataTypes.INTEGER, 
     allowNull: false,
@@ -15,7 +15,7 @@ export const SalesOrderModel = database.define('product', {
     type: DataTypes.INTEGER, 
     allowNull: false, 
     references: {
-      model: "ClientModel", 
+      model: "clients", 
       key: "id"
     }
   }, 
