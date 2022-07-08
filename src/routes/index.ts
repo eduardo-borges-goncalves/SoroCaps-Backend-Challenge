@@ -7,7 +7,6 @@ import { getSalesOrders, getSalesOrder, postSalesOrder, updateSalesOrder, delete
 
 const router = express.Router();
 
-// router.get('/', () => console.log("hello"));
 router.get('/user', getUsers);
 router.get('/user', getUser);
 router.post('/user', postUser);
@@ -25,12 +24,6 @@ router.get('/product', getProduct);
 router.post('/product', postProduct);
 router.put('/product', updateProduct);
 router.delete('/product', deleteProduct);
-
-router.get('/product/sales-order', getProducts);
-router.get('/product/sales-order', getProduct);
-router.post('/product/sales-order', postProduct);
-router.put('/product/sales-order', updateProduct);
-router.delete('/product/sales-order', deleteProduct);
 
 router.get('/sales-order', getSalesOrders);
 router.get('/sales-order', getSalesOrder);
