@@ -4,6 +4,7 @@ import { getUsers, getUser, postUser, updateUser, deleteUser } from "../controll
 import { getClients, getClient, postClient, updateClient, deleteClient } from "../controllers/client";
 import { getProducts, getProduct, postProduct, updateProduct, deleteProduct } from "../controllers/product";
 import { getSalesOrders, getSalesOrder, postSalesOrder, updateSalesOrder, deleteSalesOrder } from "../controllers/salesOrder";
+import { signIn } from "../controllers/login";
 
 const router = express.Router();
 
@@ -37,5 +38,7 @@ router.get('/sales-order', getSalesOrder);
 router.post('/sales-order', postSalesOrder);
 router.put('/sales-order', updateSalesOrder);
 router.delete('/sales-order', deleteSalesOrder);
+
+router.post('/login', signIn);
 
 export default  router; 
