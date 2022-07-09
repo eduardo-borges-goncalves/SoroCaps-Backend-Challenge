@@ -1,31 +1,25 @@
-import { DataTypes  } from "sequelize/types";
-import { database } from "../db";
+const { DataTypes } = require('sequelize');
+import { database } from "../database/db";
 
 export const ClientModel = database.define('clients', {
   id: {
-    type: DataTypes.INTEGER, 
-    allowNull: false, 
-    autoIncrement: true, 
+    type: DataTypes.INTEGER,
+    allowNull: false,
+    autoIncrement: true,
     primaryKey: true,
   },
   companyName: {
-    type: DataTypes.STRING, 
+    type: DataTypes.STRING,
     allowNull: false
-  }, 
+  },
   cnpj: {
-    type: DataTypes.STRING, 
+    type: DataTypes.STRING,
     allowNull: false // não pode ser repetido
-  }, 
+  },
   address: {
-    type: DataTypes.STRING, 
-    allowNull: false 
-  }, 
+    type: DataTypes.STRING,
+    allowNull: false
+  },
 })
 
-ClientModel.associate = (models: any) => {
-  ClientModel.hasMany(models.sales-orders, {
-    as: "salesOrder", 
-    foreignKey: "clientId"
-  })
-}
 
