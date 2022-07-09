@@ -1,4 +1,7 @@
+import { NextFunction, Request, Response } from "express";
 import { UserModel } from "../models/user"
+import * as bcrypt from "bcrypt"
+import * as jwt from "jsonwebtoken"
 
 export const signIn = async (req: Request, res: Response, next: NextFunction) => {
     try {
@@ -7,10 +10,11 @@ export const signIn = async (req: Request, res: Response, next: NextFunction) =>
             where: { userLogin }
         })
 
-        if (await bcript.compare(user.password, password)) {
-            const token = jwt.sign(
+        if (await bcrypt.compare(user.password, password)) {
+         
+            const token = process.env.APP_SECRET && jwt.sign(
                 { id: user.id },
-                process.env.APP_SECRET,
+                process.env.APP_SECRET, 
                 { expiresIn: "1d" }
             )
 

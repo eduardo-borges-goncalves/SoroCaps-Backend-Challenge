@@ -1,5 +1,6 @@
 import { Request, Response, NextFunction } from "express"
 import { ClientModel } from "../models/client"
+import { SalesOrderModel } from "../models/salesOrder"
 
 interface Client {
     clientId: string,
@@ -25,7 +26,7 @@ export const getClients = async (req: Request, res: Response, next: NextFunction
 
 export const getClient = async (req: Request, res: Response, next: NextFunction) => {
     try {
-        const clientId = req.params.id // conferir se id vai vir ir ou clientId
+        const clientId = req.params.id 
 
         const client = await ClientModel.findOne({
             where: { clientId }
@@ -53,7 +54,7 @@ export const postClient = async (req: Request, res: Response, next: NextFunction
         return res.status(201).json({
             data: client
         })
-    } catch (error) {
+    } catch (error: any) {
         return next(new Error(error));
     }
 }
@@ -85,7 +86,7 @@ export const updateClient = async (req: Request, res: Response, next: NextFuncti
         return res.status(201).json({
             data: updateClient
         })
-    } catch (error) {
+    } catch (error: any) {
         return next(new Error(error))
     }
 }
@@ -101,7 +102,7 @@ export const deleteClient = async (req: Request, res: Response, next: NextFuncti
 
         await client.destroy
         return res.status(204).send({})
-    } catch (error) {
+    } catch (error: any) {
         return next(new Error(error))
     }
 }
