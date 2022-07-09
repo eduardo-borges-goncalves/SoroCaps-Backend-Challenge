@@ -8,7 +8,6 @@ import { signIn } from "../controllers/login";
 
 const router = express.Router();
 
-// router.get('/', () => console.log("hello"));
 router.get('/user', getUsers);
 router.get('/user', getUser);
 router.post('/user', postUser);
