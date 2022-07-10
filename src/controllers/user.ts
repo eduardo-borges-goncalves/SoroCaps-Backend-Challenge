@@ -1,5 +1,6 @@
 import { Request, Response, NextFunction } from "express"
 import { UserModel } from "../models/user"
+import * as bcrypt from "bcrypt";
 
 interface User {
     userId: string,
@@ -10,7 +11,9 @@ interface User {
 
 export const getUsers = async (req: Request, res: Response, next: NextFunction) => {
     try {
-        const users = await UserModel.findAll()
+        const users = await UserModel.findAll({
+            attributes: ['id', 'name', 'userLogin']
+        })
         return res.status(200).json({
             data: users
         })
@@ -21,13 +24,13 @@ export const getUsers = async (req: Request, res: Response, next: NextFunction) 
 
 export const getUser = async (req: Request, res: Response, next: NextFunction) => {
     try {
-        const user = findUser(req.params.id)
+        const user = await findUser(req.params.id)
         if (!user) {
             res.status(400).send({ error: "Usuário não encontrado" })
         }
 
         return res.status(200).json({
-            data: user
+            data: { id: user.id, name: user.name, userLogin: user.userLogin }
         })
 
     } catch (error: any) {
@@ -41,11 +44,13 @@ export const postUser = async (req: Request, res: Response, next: NextFunction) 
         if (!name || !userLogin || !password) {
             res.status(400).send({ error: "Usuário não encontrado " })
         }
+
+        const hashPassword = await bcrypt.hash(password, 8)
         const user = await UserModel.create({
-            name, userLogin, password
+            name, userLogin, password: hashPassword
         })
         return res.status(201).json({
-            data: user
+            data: { id: user.id, name: user.name, userLogin: user.userLogin }
         })
 
     } catch (error: any) {
@@ -60,20 +65,29 @@ export const updateUser = async (req: Request, res: Response, next: NextFunction
         if (!user) {
             res.status(400).send({ error: "Usuário não encontrado" })
         }
-        const updatedUser = await UserModel.update(
+
+        const hashPassword = await bcrypt.hash(password, 8)
+        await UserModel.update(
             {
                 name: name || user.name,
                 userLogin: userLogin || user.userLogin,
-                password: password || user.password
+                password: hashPassword || user.password
             },
             {
                 where: { id: user.id },
                 returning: true,
                 plain: true
-            }
+            }    
         )
+
+        const updatedUser = await findUser(req.params.id)
+        
         return res.status(201).json({
-            data: updatedUser
+            data: { 
+                id: updatedUser.id, 
+                name: updatedUser.name, 
+                userLogin: updatedUser.userLogin 
+            }
         })
     } catch (error: any) {
         return next(new Error(error))
