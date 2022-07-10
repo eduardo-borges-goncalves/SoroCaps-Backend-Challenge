@@ -1,7 +1,7 @@
 const { DataTypes } = require('sequelize');
-import { database } from "../database/db";
+import { db } from ".";
 
-export const ClientModel = database.define('clients', {
+export const ClientModel = db.sequelize.define('clients', {
   id: {
     type: DataTypes.INTEGER,
     allowNull: false,
@@ -14,7 +14,8 @@ export const ClientModel = database.define('clients', {
   },
   cnpj: {
     type: DataTypes.STRING,
-    allowNull: false // não pode ser repetido
+    allowNull: false, 
+    unique: true
   },
   address: {
     type: DataTypes.STRING,

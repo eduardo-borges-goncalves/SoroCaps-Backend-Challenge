@@ -1,9 +1,9 @@
 const { DataTypes } = require('sequelize')
-import { database } from "../database/db";
+import { db } from ".";
 
-export const ProductModel = database.define('product', {
+export const ProductModel = db.sequelize.define('product', {
   codeProduct: {
-    type: DataTypes.STRING, 
+    type: DataTypes.INTEGER, 
     autoIncrement: true, 
     allowNull: false,
     primaryKey: true,

@@ -43,5 +43,4 @@ router.post('/sales-order', postSalesOrder);
 router.put('/sales-order/:id', updateSalesOrder);
 router.delete('/sales-order/:id', deleteSalesOrder);
 
-
-export default  router; 
+export default router; 

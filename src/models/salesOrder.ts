@@ -1,8 +1,8 @@
 const { DataTypes } = require('sequelize');
-import { database } from "../database/db";
+import { db } from ".";
 import { ClientModel } from "./client";
 
-export const SalesOrderModel = database.define('sales-orders', {
+export const SalesOrderModel = db.sequelize.define('sales-orders', {
   id: {
     type: DataTypes.INTEGER, 
     allowNull: false,
@@ -11,7 +11,8 @@ export const SalesOrderModel = database.define('sales-orders', {
   },
   status: {
     type: DataTypes.STRING, 
-    allowNull: false, // como passar valor padrão pra esse campo?
+    allowNull: false, 
+    defaultValue: "EM PROCESSO"
   },
 })
 

@@ -1,24 +1,24 @@
 import "./config/env";
 import express, { json } from "express"
 import router from "./routes"
-import { database } from "./database/db";
 
+import { db } from "./models";
 import cors from "cors";
 
 const app = express()
 
-// create auth service
-// create swager
+// create swager       
 
 app.use(json())
 app.use(cors({ credentials: true, origin: true }));
-app.use(router); 
+app.use(router);
 
-app.listen(
-  process.env.PORT,
-  () => {
-    database.sync()
-      console.log(`Server is running at port ${process.env.PORT}`)
-  }
-)
+db.sequelize.sync()
+  .then(() => {
+    app.listen(
+      process.env.PORT,
+      () => console.log(`Server is running at port ${process.env.PORT}`)
+    )
+  })
+
 

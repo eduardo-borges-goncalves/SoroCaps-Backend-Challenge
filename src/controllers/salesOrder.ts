@@ -82,7 +82,6 @@ export const postSalesOrder = async (req: Request, res: Response, next: NextFunc
         })
 
         return res.status(201).json({ data: salesOrderWithProducts })
-
     } catch (error: any) {
         return next(new Error(error));
     }
