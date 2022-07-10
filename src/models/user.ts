@@ -1,7 +1,7 @@
 const { DataTypes } = require('sequelize');
-import { database } from "../database/db";
+import { db } from ".";
 
-export const UserModel = database.define('users', {
+export const UserModel = db.sequelize.define('users', {
   id: {
     type: DataTypes.INTEGER, 
     allowNull: false, 
@@ -14,7 +14,8 @@ export const UserModel = database.define('users', {
   }, 
   userLogin: {
     type: DataTypes.STRING, 
-    allowNull: false
+    allowNull: false, 
+    unique: true, 
   }, 
   password: {
     type: DataTypes.STRING, 

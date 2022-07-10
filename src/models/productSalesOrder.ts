@@ -1,8 +1,9 @@
 const { DataTypes } = require('sequelize');
-import { database } from "../database/db";
+import { db } from ".";
 import { SalesOrderModel } from "./salesOrder";
 
-export const ProductSalesOrderModel = database.define('product-sales', {
+
+export const ProductSalesOrderModel = db.sequelize.define('product-sales', {
   codeProduct: {
     type: DataTypes.INTEGER,
     allowNull: false,
@@ -20,7 +21,6 @@ export const ProductSalesOrderModel = database.define('product-sales', {
 ProductSalesOrderModel.belongsTo(SalesOrderModel, {
   constraint: true,
   foreignkey: "salesOrderId",
-  as: "productSalesOrder",
 })
 
 SalesOrderModel.hasMany(ProductSalesOrderModel, {
