@@ -9,13 +9,12 @@ export const signIn = async (req: Request, res: Response, next: NextFunction) =>
         const user = await UserModel.findOne({
             where: { userLogin }
         })
-
-        if (await bcrypt.compare(user.password, password)) {
-         
+        
+        if (await bcrypt.compare(password, user.password)) {
             const token = process.env.APP_SECRET && jwt.sign(
                 { id: user.id },
                 process.env.APP_SECRET, 
-                { expiresIn: "1d" }
+                { expiresIn: "1h" }
             )
 
             const data = {
