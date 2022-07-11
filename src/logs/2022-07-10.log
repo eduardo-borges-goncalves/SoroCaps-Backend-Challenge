@@ -1,0 +1,23 @@
+
+Request: POST /sales-order at Sun Jul 10 2022 23:48:14 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: insomnia/2022.4.2
+Request Body:
+{
+	"clientId": "1",
+	"products": [
+		{
+			"quantity": "70",
+			"priceSales": "10",
+			"codeProduct": "10"
+		},
+		{
+			"quantity": "50",
+			"priceSales": "40",
+			"codeProduct": "10"
+		}
+	]
+}
+Response Body:
+{
+	"message": "Token inválido!"
+}
+Response: 401 21.945 ms 
