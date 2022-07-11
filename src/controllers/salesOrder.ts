@@ -52,17 +52,16 @@ export const getSalesOrder = async (req: Request, res: Response, next: NextFunct
 
 export const postSalesOrder = async (req: Request, res: Response, next: NextFunction) => {
     try {
-        const { status, clientId, products } = req.body;
-        if (!status) res.status(400).send({ error: "Status é necessário à criação do pedido de venda" })
+        const { clientId, products } = req.body;
         if (!clientId) res.status(400).send({ error: "ClientId é necessário à criação do pedido de venda" })
         if (!products) res.status(400).send({ error: "Produto é necessário à criação do pedido de venda" })
 
-        const salesOrder = await SalesOrderModel.create({ status, clientId })
+        const salesOrder = await SalesOrderModel.create({ clientId })
 
         await products.map(async (product: ProductSales) => {
-            if(!product.codeProduct) res.status(400).send({error: "Código do Produto é obrigatório"})
-            if(!product.quantity) res.status(400).send({error: "Quantidade do Produto é obrigatório"})
-            if(!product.priceSales) res.status(400).send({error: "Preço de venda do Produto é obrigatório"})
+            if (!product.codeProduct) res.status(400).send({ error: "Código do Produto é obrigatório" })
+            if (!product.quantity) res.status(400).send({ error: "Quantidade do Produto é obrigatório" })
+            if (!product.priceSales) res.status(400).send({ error: "Preço de venda do Produto é obrigatório" })
 
             // console.log("+++++++++++++++++++++")
             await ProductSalesOrderModel.create({
@@ -92,7 +91,7 @@ export const updateSalesOrder = async (req: Request, res: Response, next: NextFu
         const salesOrder = await SalesOrderModel.findOne({
             where: { id: req.params.id }
         })
-        if (!salesOrder) 
+        if (!salesOrder)
             return res.status(400).send({ error: 'Pedido de venda não encontrado' });
 
         const { status, clientId } = req.body;
@@ -119,7 +118,7 @@ export const deleteSalesOrder = async (req: Request, res: Response, next: NextFu
         const salesOrder = await SalesOrderModel.findOne({
             where: { id: req.params.id }
         });
-        if (!salesOrder) 
+        if (!salesOrder)
             return res.status(400).send({ error: 'Pedido de venda não encontrado' });
 
         await salesOrder.destroy

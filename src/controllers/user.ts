@@ -45,7 +45,7 @@ export const postUser = async (req: Request, res: Response, next: NextFunction) 
             res.status(400).send({ error: "Usuário não encontrado " })
         }
 
-        const hashPassword = await bcrypt.hash(password, 8)
+        const hashPassword = await bcrypt.hash(password, 16)
         const user = await UserModel.create({
             name, userLogin, password: hashPassword
         })
