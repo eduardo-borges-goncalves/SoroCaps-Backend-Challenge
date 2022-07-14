@@ -1,5 +1,6 @@
 import { Request, Response, NextFunction } from "express"
 import { ClientModel } from "../models/client"
+import { ProductModel } from "../models/product"
 import { ProductSalesOrderModel } from "../models/productSalesOrder"
 import { SalesOrderModel } from "../models/salesOrder"
 
@@ -70,8 +71,7 @@ export const postSalesOrder = async (req: Request, res: Response, next: NextFunc
 
             if (product.priceSales < productDB.priceSales)
                 res.status(400).send({
-                    message: `O Preço de venda do produto
-                     ${productDB.name} não pode ser inferior ao cadastrado: ${productDB.priceSales}.`
+                    error: `O Preço de venda do produto ${productDB.name} não pode ser inferior ao cadastrado: ${productDB.priceSales}.`
                 })
 
             await ProductSalesOrderModel.create({

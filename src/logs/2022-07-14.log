@@ -43317,3 +43317,868 @@ Response Body:
 				"product-sales": []
 ...
 Response: 304 30.461 ms 
+
+Request: OPTIONS /login at Thu Jul 14 2022 18:15:22 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36
+Response: 204 2.319 ms 
+
+Request: POST /login at Thu Jul 14 2022 18:15:22 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36
+Request Body:
+{
+	"userLogin": "asdf",
+	"password": "asdfsdfasdf"
+}
+Response: 500 139.073 ms 
+
+Request: OPTIONS /login at Thu Jul 14 2022 18:15:43 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36
+Response: 204 0.363 ms 
+
+Request: POST /login at Thu Jul 14 2022 18:15:43 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36
+Request Body:
+{
+	"userLogin": "eduardo",
+	"password": "12345678"
+}
+Response Body:
+{
+	"id": 1,
+	"name": "eduardo",
+	"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY1NzgzMzM0MywiZXhwIjoxNjU3ODM2OTQzfQ._kTI-qTIZ76Yfih0vl76qigJdmYwIEnX379wQRNDOFs"
+}
+Response: 200 50.710 ms 
+
+Request: OPTIONS /sales-orders at Thu Jul 14 2022 18:16:40 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36
+Response: 204 0.211 ms 
+
+Request: OPTIONS /sales-orders at Thu Jul 14 2022 18:16:40 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36
+Response: 204 0.391 ms 
+
+Request: GET /sales-orders at Thu Jul 14 2022 18:16:40 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36
+Response Body:
+[
+	{
+		"id": 1,
+		"companyName": "abel",
+		"cnpj": "12354678912345",
+		"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+		"createdAt": "2022-07-13T03:23:24.000Z",
+		"updatedAt": "2022-07-13T03:23:24.000Z",
+		"sales-orders": [
+			{
+				"id": 41,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:30:40.000Z",
+				"updatedAt": "2022-07-14T03:30:40.000Z",
+				"clientId": 1,
+				"product-sales": [
+					{
+						"id": 96,
+						"codeProduct": 1,
+						"priceSales": 9,
+						"quantity": 100,
+						"createdAt": "2022-07-14T03:30:40.000Z",
+						"updatedAt": "2022-07-14T03:30:40.000Z",
+						"salesOrderId": 41
+					}
+				]
+			},
+			{
+				"id": 40,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:29:26.000Z",
+				"updatedAt": "2022-07-14T03:29:26.000Z",
+				"clientId": 1,
+				"product-sales": []
+			},
+			{
+				"id": 39,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:29:01.000Z",
+				"updatedAt": "2022-07-14T03:29:01.000Z",
+				"clientId": 1,
+				"product-sales": []
+...
+Response: 200 126.802 ms 
+
+Request: GET /sales-orders at Thu Jul 14 2022 18:16:40 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36
+Response Body:
+[
+	{
+		"id": 1,
+		"companyName": "abel",
+		"cnpj": "12354678912345",
+		"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+		"createdAt": "2022-07-13T03:23:24.000Z",
+		"updatedAt": "2022-07-13T03:23:24.000Z",
+		"sales-orders": [
+			{
+				"id": 41,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:30:40.000Z",
+				"updatedAt": "2022-07-14T03:30:40.000Z",
+				"clientId": 1,
+				"product-sales": [
+					{
+						"id": 96,
+						"codeProduct": 1,
+						"priceSales": 9,
+						"quantity": 100,
+						"createdAt": "2022-07-14T03:30:40.000Z",
+						"updatedAt": "2022-07-14T03:30:40.000Z",
+						"salesOrderId": 41
+					}
+				]
+			},
+			{
+				"id": 40,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:29:26.000Z",
+				"updatedAt": "2022-07-14T03:29:26.000Z",
+				"clientId": 1,
+				"product-sales": []
+			},
+			{
+				"id": 39,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:29:01.000Z",
+				"updatedAt": "2022-07-14T03:29:01.000Z",
+				"clientId": 1,
+				"product-sales": []
+...
+Response: 304 50.608 ms 
+
+Request: OPTIONS /sales-orders at Thu Jul 14 2022 18:22:36 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+Response: 204 0.298 ms 
+
+Request: OPTIONS /sales-orders at Thu Jul 14 2022 18:22:36 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+Response: 204 0.343 ms 
+
+Request: GET /sales-orders at Thu Jul 14 2022 18:22:36 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+Response Body:
+[
+	{
+		"id": 1,
+		"companyName": "abel",
+		"cnpj": "12354678912345",
+		"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+		"createdAt": "2022-07-13T03:23:24.000Z",
+		"updatedAt": "2022-07-13T03:23:24.000Z",
+		"sales-orders": [
+			{
+				"id": 41,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:30:40.000Z",
+				"updatedAt": "2022-07-14T03:30:40.000Z",
+				"clientId": 1,
+				"product-sales": [
+					{
+						"id": 96,
+						"codeProduct": 1,
+						"priceSales": 9,
+						"quantity": 100,
+						"createdAt": "2022-07-14T03:30:40.000Z",
+						"updatedAt": "2022-07-14T03:30:40.000Z",
+						"salesOrderId": 41
+					}
+				]
+			},
+			{
+				"id": 40,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:29:26.000Z",
+				"updatedAt": "2022-07-14T03:29:26.000Z",
+				"clientId": 1,
+				"product-sales": []
+			},
+			{
+				"id": 39,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:29:01.000Z",
+				"updatedAt": "2022-07-14T03:29:01.000Z",
+				"clientId": 1,
+				"product-sales": []
+...
+Response: 304 43.325 ms 
+
+Request: GET /sales-orders at Thu Jul 14 2022 18:22:36 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+Response Body:
+[
+	{
+		"id": 1,
+		"companyName": "abel",
+		"cnpj": "12354678912345",
+		"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+		"createdAt": "2022-07-13T03:23:24.000Z",
+		"updatedAt": "2022-07-13T03:23:24.000Z",
+		"sales-orders": [
+			{
+				"id": 41,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:30:40.000Z",
+				"updatedAt": "2022-07-14T03:30:40.000Z",
+				"clientId": 1,
+				"product-sales": [
+					{
+						"id": 96,
+						"codeProduct": 1,
+						"priceSales": 9,
+						"quantity": 100,
+						"createdAt": "2022-07-14T03:30:40.000Z",
+						"updatedAt": "2022-07-14T03:30:40.000Z",
+						"salesOrderId": 41
+					}
+				]
+			},
+			{
+				"id": 40,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:29:26.000Z",
+				"updatedAt": "2022-07-14T03:29:26.000Z",
+				"clientId": 1,
+				"product-sales": []
+			},
+			{
+				"id": 39,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:29:01.000Z",
+				"updatedAt": "2022-07-14T03:29:01.000Z",
+				"clientId": 1,
+				"product-sales": []
+...
+Response: 304 27.817 ms 
+
+Request: GET /sales-orders at Thu Jul 14 2022 18:22:38 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+Response Body:
+[
+	{
+		"id": 1,
+		"companyName": "abel",
+		"cnpj": "12354678912345",
+		"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+		"createdAt": "2022-07-13T03:23:24.000Z",
+		"updatedAt": "2022-07-13T03:23:24.000Z",
+		"sales-orders": [
+			{
+				"id": 41,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:30:40.000Z",
+				"updatedAt": "2022-07-14T03:30:40.000Z",
+				"clientId": 1,
+				"product-sales": [
+					{
+						"id": 96,
+						"codeProduct": 1,
+						"priceSales": 9,
+						"quantity": 100,
+						"createdAt": "2022-07-14T03:30:40.000Z",
+						"updatedAt": "2022-07-14T03:30:40.000Z",
+						"salesOrderId": 41
+					}
+				]
+			},
+			{
+				"id": 40,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:29:26.000Z",
+				"updatedAt": "2022-07-14T03:29:26.000Z",
+				"clientId": 1,
+				"product-sales": []
+			},
+			{
+				"id": 39,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:29:01.000Z",
+				"updatedAt": "2022-07-14T03:29:01.000Z",
+				"clientId": 1,
+				"product-sales": []
+...
+Response: 304 31.173 ms 
+
+Request: GET /sales-orders at Thu Jul 14 2022 18:22:38 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+Response Body:
+[
+	{
+		"id": 1,
+		"companyName": "abel",
+		"cnpj": "12354678912345",
+		"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+		"createdAt": "2022-07-13T03:23:24.000Z",
+		"updatedAt": "2022-07-13T03:23:24.000Z",
+		"sales-orders": [
+			{
+				"id": 41,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:30:40.000Z",
+				"updatedAt": "2022-07-14T03:30:40.000Z",
+				"clientId": 1,
+				"product-sales": [
+					{
+						"id": 96,
+						"codeProduct": 1,
+						"priceSales": 9,
+						"quantity": 100,
+						"createdAt": "2022-07-14T03:30:40.000Z",
+						"updatedAt": "2022-07-14T03:30:40.000Z",
+						"salesOrderId": 41
+					}
+				]
+			},
+			{
+				"id": 40,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:29:26.000Z",
+				"updatedAt": "2022-07-14T03:29:26.000Z",
+				"clientId": 1,
+				"product-sales": []
+			},
+			{
+				"id": 39,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:29:01.000Z",
+				"updatedAt": "2022-07-14T03:29:01.000Z",
+				"clientId": 1,
+				"product-sales": []
+...
+Response: 304 32.837 ms 
+
+Request: OPTIONS /sales-orders at Thu Jul 14 2022 18:24:44 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+Response: 204 0.190 ms 
+
+Request: OPTIONS /sales-orders at Thu Jul 14 2022 18:24:44 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+Response: 204 0.212 ms 
+
+Request: GET /sales-orders at Thu Jul 14 2022 18:24:44 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+Response Body:
+[
+	{
+		"id": 1,
+		"companyName": "abel",
+		"cnpj": "12354678912345",
+		"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+		"createdAt": "2022-07-13T03:23:24.000Z",
+		"updatedAt": "2022-07-13T03:23:24.000Z",
+		"sales-orders": [
+			{
+				"id": 41,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:30:40.000Z",
+				"updatedAt": "2022-07-14T03:30:40.000Z",
+				"clientId": 1,
+				"product-sales": [
+					{
+						"id": 96,
+						"codeProduct": 1,
+						"priceSales": 9,
+						"quantity": 100,
+						"createdAt": "2022-07-14T03:30:40.000Z",
+						"updatedAt": "2022-07-14T03:30:40.000Z",
+						"salesOrderId": 41
+					}
+				]
+			},
+			{
+				"id": 40,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:29:26.000Z",
+				"updatedAt": "2022-07-14T03:29:26.000Z",
+				"clientId": 1,
+				"product-sales": []
+			},
+			{
+				"id": 39,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:29:01.000Z",
+				"updatedAt": "2022-07-14T03:29:01.000Z",
+				"clientId": 1,
+				"product-sales": []
+...
+Response: 304 29.693 ms 
+
+Request: GET /sales-orders at Thu Jul 14 2022 18:24:44 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+Response Body:
+[
+	{
+		"id": 1,
+		"companyName": "abel",
+		"cnpj": "12354678912345",
+		"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+		"createdAt": "2022-07-13T03:23:24.000Z",
+		"updatedAt": "2022-07-13T03:23:24.000Z",
+		"sales-orders": [
+			{
+				"id": 41,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:30:40.000Z",
+				"updatedAt": "2022-07-14T03:30:40.000Z",
+				"clientId": 1,
+				"product-sales": [
+					{
+						"id": 96,
+						"codeProduct": 1,
+						"priceSales": 9,
+						"quantity": 100,
+						"createdAt": "2022-07-14T03:30:40.000Z",
+						"updatedAt": "2022-07-14T03:30:40.000Z",
+						"salesOrderId": 41
+					}
+				]
+			},
+			{
+				"id": 40,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:29:26.000Z",
+				"updatedAt": "2022-07-14T03:29:26.000Z",
+				"clientId": 1,
+				"product-sales": []
+			},
+			{
+				"id": 39,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:29:01.000Z",
+				"updatedAt": "2022-07-14T03:29:01.000Z",
+				"clientId": 1,
+				"product-sales": []
+...
+Response: 304 29.104 ms 
+
+Request: OPTIONS /sales-orders at Thu Jul 14 2022 18:24:54 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+Response: 204 0.198 ms 
+
+Request: OPTIONS /sales-orders at Thu Jul 14 2022 18:24:54 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+Response: 204 0.261 ms 
+
+Request: GET /sales-orders at Thu Jul 14 2022 18:24:54 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+Response Body:
+[
+	{
+		"id": 1,
+		"companyName": "abel",
+		"cnpj": "12354678912345",
+		"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+		"createdAt": "2022-07-13T03:23:24.000Z",
+		"updatedAt": "2022-07-13T03:23:24.000Z",
+		"sales-orders": [
+			{
+				"id": 41,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:30:40.000Z",
+				"updatedAt": "2022-07-14T03:30:40.000Z",
+				"clientId": 1,
+				"product-sales": [
+					{
+						"id": 96,
+						"codeProduct": 1,
+						"priceSales": 9,
+						"quantity": 100,
+						"createdAt": "2022-07-14T03:30:40.000Z",
+						"updatedAt": "2022-07-14T03:30:40.000Z",
+						"salesOrderId": 41
+					}
+				]
+			},
+			{
+				"id": 40,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:29:26.000Z",
+				"updatedAt": "2022-07-14T03:29:26.000Z",
+				"clientId": 1,
+				"product-sales": []
+			},
+			{
+				"id": 39,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:29:01.000Z",
+				"updatedAt": "2022-07-14T03:29:01.000Z",
+				"clientId": 1,
+				"product-sales": []
+...
+Response: 304 38.574 ms 
+
+Request: GET /sales-orders at Thu Jul 14 2022 18:24:54 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+Response Body:
+[
+	{
+		"id": 1,
+		"companyName": "abel",
+		"cnpj": "12354678912345",
+		"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+		"createdAt": "2022-07-13T03:23:24.000Z",
+		"updatedAt": "2022-07-13T03:23:24.000Z",
+		"sales-orders": [
+			{
+				"id": 41,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:30:40.000Z",
+				"updatedAt": "2022-07-14T03:30:40.000Z",
+				"clientId": 1,
+				"product-sales": [
+					{
+						"id": 96,
+						"codeProduct": 1,
+						"priceSales": 9,
+						"quantity": 100,
+						"createdAt": "2022-07-14T03:30:40.000Z",
+						"updatedAt": "2022-07-14T03:30:40.000Z",
+						"salesOrderId": 41
+					}
+				]
+			},
+			{
+				"id": 40,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:29:26.000Z",
+				"updatedAt": "2022-07-14T03:29:26.000Z",
+				"clientId": 1,
+				"product-sales": []
+			},
+			{
+				"id": 39,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:29:01.000Z",
+				"updatedAt": "2022-07-14T03:29:01.000Z",
+				"clientId": 1,
+				"product-sales": []
+...
+Response: 304 32.611 ms 
+
+Request: OPTIONS /login at Thu Jul 14 2022 18:25:53 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.206 ms 
+
+Request: POST /login at Thu Jul 14 2022 18:25:53 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"userLogin": "eduardo",
+	"password": "12345678"
+}
+Response Body:
+{
+	"id": 1,
+	"name": "eduardo",
+	"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY1NzgzMzk1MywiZXhwIjoxNjU3ODM3NTUzfQ.PoLzkWQyjMg4zD3Q-pcAq_5BqMNNHklR670ftL_UWY8"
+}
+Response: 200 31.699 ms 
+
+Request: OPTIONS /sales-orders at Thu Jul 14 2022 18:25:56 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.303 ms 
+
+Request: OPTIONS /sales-orders at Thu Jul 14 2022 18:25:56 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.142 ms 
+
+Request: GET /sales-orders at Thu Jul 14 2022 18:25:56 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response Body:
+[
+	{
+		"id": 1,
+		"companyName": "abel",
+		"cnpj": "12354678912345",
+		"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+		"createdAt": "2022-07-13T03:23:24.000Z",
+		"updatedAt": "2022-07-13T03:23:24.000Z",
+		"sales-orders": [
+			{
+				"id": 41,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:30:40.000Z",
+				"updatedAt": "2022-07-14T03:30:40.000Z",
+				"clientId": 1,
+				"product-sales": [
+					{
+						"id": 96,
+						"codeProduct": 1,
+						"priceSales": 9,
+						"quantity": 100,
+						"createdAt": "2022-07-14T03:30:40.000Z",
+						"updatedAt": "2022-07-14T03:30:40.000Z",
+						"salesOrderId": 41
+					}
+				]
+			},
+			{
+				"id": 40,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:29:26.000Z",
+				"updatedAt": "2022-07-14T03:29:26.000Z",
+				"clientId": 1,
+				"product-sales": []
+			},
+			{
+				"id": 39,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:29:01.000Z",
+				"updatedAt": "2022-07-14T03:29:01.000Z",
+				"clientId": 1,
+				"product-sales": []
+...
+Response: 304 29.114 ms 
+
+Request: GET /sales-orders at Thu Jul 14 2022 18:25:56 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response Body:
+[
+	{
+		"id": 1,
+		"companyName": "abel",
+		"cnpj": "12354678912345",
+		"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+		"createdAt": "2022-07-13T03:23:24.000Z",
+		"updatedAt": "2022-07-13T03:23:24.000Z",
+		"sales-orders": [
+			{
+				"id": 41,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:30:40.000Z",
+				"updatedAt": "2022-07-14T03:30:40.000Z",
+				"clientId": 1,
+				"product-sales": [
+					{
+						"id": 96,
+						"codeProduct": 1,
+						"priceSales": 9,
+						"quantity": 100,
+						"createdAt": "2022-07-14T03:30:40.000Z",
+						"updatedAt": "2022-07-14T03:30:40.000Z",
+						"salesOrderId": 41
+					}
+				]
+			},
+			{
+				"id": 40,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:29:26.000Z",
+				"updatedAt": "2022-07-14T03:29:26.000Z",
+				"clientId": 1,
+				"product-sales": []
+			},
+			{
+				"id": 39,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:29:01.000Z",
+				"updatedAt": "2022-07-14T03:29:01.000Z",
+				"clientId": 1,
+				"product-sales": []
+...
+Response: 304 29.003 ms 
+
+Request: OPTIONS /clients/ABEL at Thu Jul 14 2022 18:26:00 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.237 ms 
+
+Request: GET /clients/ABEL at Thu Jul 14 2022 18:26:00 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response Body:
+[
+	{
+		"id": 1,
+		"companyName": "abel",
+		"cnpj": "12354678912345",
+		"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+		"createdAt": "2022-07-13T03:23:24.000Z",
+		"updatedAt": "2022-07-13T03:23:24.000Z"
+	}
+]
+Response: 200 7.064 ms 
+
+Request: OPTIONS /products/THIAGO at Thu Jul 14 2022 18:26:04 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.256 ms 
+
+Request: GET /products/THIAGO at Thu Jul 14 2022 18:26:04 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 200 25.403 ms 
+
+Request: OPTIONS /products/THIAGO%20FREIRE at Thu Jul 14 2022 18:26:07 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.220 ms 
+
+Request: GET /products/THIAGO%20FREIRE at Thu Jul 14 2022 18:26:07 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response Body:
+[
+	{
+		"codeProduct": 1,
+		"name": "Thiago Freire",
+		"description": "refrigerante",
+		"measurementUnit": "litro",
+		"pricePurchase": 3,
+		"priceSales": 9,
+		"createdAt": "2022-07-14T02:54:03.000Z",
+		"updatedAt": "2022-07-14T02:54:03.000Z"
+	}
+]
+Response: 200 5.634 ms 
+
+Request: OPTIONS /sales-orders at Thu Jul 14 2022 18:26:22 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+Response: 204 0.169 ms 
+
+Request: OPTIONS /sales-orders at Thu Jul 14 2022 18:26:22 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+Response: 204 0.194 ms 
+
+Request: GET /sales-orders at Thu Jul 14 2022 18:26:22 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+Response Body:
+[
+	{
+		"id": 1,
+		"companyName": "abel",
+		"cnpj": "12354678912345",
+		"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+		"createdAt": "2022-07-13T03:23:24.000Z",
+		"updatedAt": "2022-07-13T03:23:24.000Z",
+		"sales-orders": [
+			{
+				"id": 41,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:30:40.000Z",
+				"updatedAt": "2022-07-14T03:30:40.000Z",
+				"clientId": 1,
+				"product-sales": [
+					{
+						"id": 96,
+						"codeProduct": 1,
+						"priceSales": 9,
+						"quantity": 100,
+						"createdAt": "2022-07-14T03:30:40.000Z",
+						"updatedAt": "2022-07-14T03:30:40.000Z",
+						"salesOrderId": 41
+					}
+				]
+			},
+			{
+				"id": 40,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:29:26.000Z",
+				"updatedAt": "2022-07-14T03:29:26.000Z",
+				"clientId": 1,
+				"product-sales": []
+			},
+			{
+				"id": 39,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:29:01.000Z",
+				"updatedAt": "2022-07-14T03:29:01.000Z",
+				"clientId": 1,
+				"product-sales": []
+...
+Response: 304 33.359 ms 
+
+Request: GET /sales-orders at Thu Jul 14 2022 18:26:22 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+Response Body:
+[
+	{
+		"id": 1,
+		"companyName": "abel",
+		"cnpj": "12354678912345",
+		"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+		"createdAt": "2022-07-13T03:23:24.000Z",
+		"updatedAt": "2022-07-13T03:23:24.000Z",
+		"sales-orders": [
+			{
+				"id": 41,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:30:40.000Z",
+				"updatedAt": "2022-07-14T03:30:40.000Z",
+				"clientId": 1,
+				"product-sales": [
+					{
+						"id": 96,
+						"codeProduct": 1,
+						"priceSales": 9,
+						"quantity": 100,
+						"createdAt": "2022-07-14T03:30:40.000Z",
+						"updatedAt": "2022-07-14T03:30:40.000Z",
+						"salesOrderId": 41
+					}
+				]
+			},
+			{
+				"id": 40,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:29:26.000Z",
+				"updatedAt": "2022-07-14T03:29:26.000Z",
+				"clientId": 1,
+				"product-sales": []
+			},
+			{
+				"id": 39,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-14T03:29:01.000Z",
+				"updatedAt": "2022-07-14T03:29:01.000Z",
+				"clientId": 1,
+				"product-sales": []
+...
+Response: 304 52.508 ms 
+
+Request: OPTIONS /sales-orders at Thu Jul 14 2022 18:27:46 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.171 ms 
+
+Request: POST /sales-orders at Thu Jul 14 2022 18:27:46 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"clientId": "1",
+	"products": [
+		{
+			"codeProduct": "1",
+			"priceSales": "1",
+			"quantity": "100"
+		}
+	]
+}
+Response Body:
+{
+	"message": "O Preço de venda do produto\n                     Thiago Freire não pode ser inferior ao cadastrado: 9."
+}
+Response: 400 89.067 ms 
+
+Request: OPTIONS /clients/ABEL at Thu Jul 14 2022 18:30:04 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 2.139 ms 
+
+Request: GET /clients/ABEL at Thu Jul 14 2022 18:30:04 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+[
+	{
+		"id": 1,
+		"companyName": "abel",
+		"cnpj": "12354678912345",
+		"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+		"createdAt": "2022-07-13T03:23:24.000Z",
+		"updatedAt": "2022-07-13T03:23:24.000Z"
+	}
+]
+Response: 304 23.692 ms 
+
+Request: OPTIONS /products/THAI at Thu Jul 14 2022 18:30:08 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.302 ms 
+
+Request: GET /products/THAI at Thu Jul 14 2022 18:30:08 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 200 8.814 ms 
+
+Request: OPTIONS /products/THIAGO%20FREIRE at Thu Jul 14 2022 18:30:10 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.271 ms 
+
+Request: GET /products/THIAGO%20FREIRE at Thu Jul 14 2022 18:30:10 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+[
+	{
+		"codeProduct": 1,
+		"name": "Thiago Freire",
+		"description": "refrigerante",
+		"measurementUnit": "litro",
+		"pricePurchase": 3,
+		"priceSales": 9,
+		"createdAt": "2022-07-14T02:54:03.000Z",
+		"updatedAt": "2022-07-14T02:54:03.000Z"
+	}
+]
+Response: 304 6.496 ms 
+
+Request: OPTIONS /sales-orders at Thu Jul 14 2022 18:30:19 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.243 ms 
+
+Request: POST /sales-orders at Thu Jul 14 2022 18:30:19 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"clientId": "1",
+	"products": [
+		{
+			"codeProduct": "1",
+			"priceSales": "1",
+			"quantity": "1"
+		}
+	]
+}
+Response Body:
+{
+	"message": "O Preço de venda do produto Thiago Freire não pode ser inferior ao cadastrado: 9."
+}
+Response: 400 51.042 ms 
