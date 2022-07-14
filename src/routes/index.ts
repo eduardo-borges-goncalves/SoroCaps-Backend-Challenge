@@ -4,6 +4,7 @@ import { getUsers, getUser, postUser, updateUser, deleteUser } from "../controll
 import { getClients, getClient, postClient, updateClient, deleteClient } from "../controllers/client";
 import { getProducts, getProduct, postProduct, updateProduct, deleteProduct } from "../controllers/product";
 import { getSalesOrders, getSalesOrder, postSalesOrder, updateSalesOrder, deleteSalesOrder } from "../controllers/salesOrder";
+
 import { signIn } from "../controllers/login";
 import { authentication } from "../middlewares/authentication";
 
@@ -30,12 +31,6 @@ router.get('/products/:name', getProduct);
 router.post('/products', postProduct);
 router.put('/products/:id', updateProduct);
 router.delete('/products/:id', deleteProduct);
-
-router.get('/product/sales-order', getProducts);
-router.get('/product/sales-order/:id', getProduct);
-router.post('/product/sales-order', postProduct);
-router.put('/product/sales-order/:id', updateProduct);
-router.delete('/product/sales-order/:id', deleteProduct);
 
 router.get('/sales-orders', getSalesOrders);
 router.get('/sales-orders/:id', getSalesOrder);

@@ -16,26 +16,18 @@ interface SalesOrder {
 
 export const getSalesOrders = async (req: Request, res: Response, next: NextFunction) => {
     try {
-        const teste = await ClientModel.findAll({
+        const salesOrders = await ClientModel.findAll({
             include: [{
-                model: SalesOrderModel, 
+                model: SalesOrderModel,
                 include: [ProductSalesOrderModel]
             }]
         })
 
-        // console.log()
-
-        const salesOrders = await SalesOrderModel.findAll({
-            include: [{
-                model: ProductSalesOrderModel,
-            }],
-            
-        })
         if (salesOrders.length === 0) {
             return res.status(204).send({ message: "Nenhum pedido de venda cadastrado" })
         }
 
-        return res.status(200).json(teste)
+        return res.status(200).json(salesOrders)
     } catch (error: any) {
         return next(new Error(error))
     }
@@ -72,7 +64,16 @@ export const postSalesOrder = async (req: Request, res: Response, next: NextFunc
             if (!product.quantity) res.status(400).send({ error: "Quantidade do Produto é obrigatório" })
             if (!product.priceSales) res.status(400).send({ error: "Preço de venda do Produto é obrigatório" })
 
-            // console.log("+++++++++++++++++++++")
+            const productDB = await ProductModel.findOne({
+                where: { codeProduct: product.codeProduct }
+            })
+
+            if (product.priceSales < productDB.priceSales)
+                res.status(400).send({
+                    message: `O Preço de venda do produto
+                     ${productDB.name} não pode ser inferior ao cadastrado: ${productDB.priceSales}.`
+                })
+
             await ProductSalesOrderModel.create({
                 codeProduct: product.codeProduct,
                 quantity: product.quantity,
@@ -81,7 +82,6 @@ export const postSalesOrder = async (req: Request, res: Response, next: NextFunc
             })
         })
 
-        // console.log("...................///..........")
         const salesOrderWithProducts = await SalesOrderModel.findOne({
             where: { id: salesOrder.id },
             include: [{
@@ -136,7 +136,3 @@ export const deleteSalesOrder = async (req: Request, res: Response, next: NextFu
         return next(new Error(error))
     }
 }
-
-// front cria o pedido de venda -> manda pro back
-// front cria os produtos da venda em outra rota
-// back devolve os produtos somados com o pedido 
