@@ -42,7 +42,7 @@ export const postUser = async (req: Request, res: Response, next: NextFunction) 
     try {
         const { name, userLogin, password } = req.body;
         if (!name || !userLogin || !password) {
-            res.status(400).send({ error: "Usuário não encontrado " })
+            res.status(400).send({ error: "Característica necessária à criação não informada" })
         }
 
         const hashPassword = await bcrypt.hash(password, 16)

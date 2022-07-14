@@ -1,0 +1,735 @@
+
+Request: OPTIONS /login at Tue Jul 12 2022 12:05:36 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 2.667 ms 
+
+Request: POST /login at Tue Jul 12 2022 12:05:36 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"userLogin": "admin@luby.com.br",
+	"password": "adminasdfsdf"
+}
+Response: 500 72.986 ms 
+
+Request: OPTIONS /login at Tue Jul 12 2022 12:08:06 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.408 ms 
+
+Request: POST /login at Tue Jul 12 2022 12:08:06 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"userLogin": "admin@luby.com.br",
+	"password": "adminasdfasdf"
+}
+Response: 500 29.218 ms 
+
+Request: OPTIONS /login at Tue Jul 12 2022 12:09:58 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 2.007 ms 
+
+Request: POST /login at Tue Jul 12 2022 12:09:58 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"userLogin": "admin@luby.com.br",
+	"password": "adminasdfasdf"
+}
+Response: 500 44.233 ms 
+
+Request: POST /login at Tue Jul 12 2022 12:12:59 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: insomnia/2022.4.2
+Request Body:
+{
+	"userLogin": "eduardo",
+	"password": "12345678"
+}
+Response Body:
+{
+	"data": {
+		"id": 1,
+		"name": "eduardo",
+		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY1NzYzODc3OSwiZXhwIjoxNjU3NjQyMzc5fQ.J3QmAv1x23Say9OlQUTFHG9wSHLktMILqFVXQ0eooPw"
+	}
+}
+Response: 200 71.583 ms 
+
+Request: POST /login at Tue Jul 12 2022 12:13:04 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: insomnia/2022.4.2
+Request Body:
+{
+	"userLogin": "eduardo",
+	"password": "12345"
+}
+Response Body:
+{
+	"message": "Dados inválidos"
+}
+Response: 404 30.408 ms 
+
+Request: OPTIONS /login at Tue Jul 12 2022 12:13:39 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.208 ms 
+
+Request: POST /login at Tue Jul 12 2022 12:13:40 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"userLogin": "admin@luby.com.br",
+	"password": "12345678"
+}
+Response: 500 21.265 ms 
+
+Request: OPTIONS /login at Tue Jul 12 2022 12:13:51 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.347 ms 
+
+Request: POST /login at Tue Jul 12 2022 12:13:51 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"userLogin": "admin@luby.com.br",
+	"password": "12345678"
+}
+Response: 500 27.649 ms 
+
+Request: OPTIONS /login at Tue Jul 12 2022 12:14:43 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.182 ms 
+
+Request: POST /login at Tue Jul 12 2022 12:14:43 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"userLogin": "eduardo",
+	"password": "12345678"
+}
+Response Body:
+{
+	"data": {
+		"id": 1,
+		"name": "eduardo",
+		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY1NzYzODg4MywiZXhwIjoxNjU3NjQyNDgzfQ.Zziw1uepp1DGKRdfr_KL2jOM7kx44F9dDDR_DZB94s0"
+	}
+}
+Response: 200 47.076 ms 
+
+Request: POST /login at Tue Jul 12 2022 12:14:47 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"userLogin": "eduardo",
+	"password": "12345678"
+}
+Response Body:
+{
+	"data": {
+		"id": 1,
+		"name": "eduardo",
+		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY1NzYzODg4NywiZXhwIjoxNjU3NjQyNDg3fQ.JYJSa3dyE7c_TQyN9SmFvmgeQ9eXbd7jiPRU7dKmddA"
+	}
+}
+Response: 200 32.801 ms 
+
+Request: OPTIONS /login at Tue Jul 12 2022 12:15:37 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.235 ms 
+
+Request: POST /login at Tue Jul 12 2022 12:15:37 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"userLogin": "eduardo",
+	"password": "12345678"
+}
+Response Body:
+{
+	"data": {
+		"id": 1,
+		"name": "eduardo",
+		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY1NzYzODkzNywiZXhwIjoxNjU3NjQyNTM3fQ.2nrtMroILkbVACcU91CFigR1IOleEBqXQLBC6LQVH2c"
+	}
+}
+Response: 200 77.030 ms 
+
+Request: OPTIONS /login at Tue Jul 12 2022 12:16:00 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.218 ms 
+
+Request: POST /login at Tue Jul 12 2022 12:16:00 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"userLogin": "eduardoasdf",
+	"password": "12345678"
+}
+Response: 500 21.160 ms 
+
+Request: OPTIONS /login at Tue Jul 12 2022 12:18:55 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 2.818 ms 
+
+Request: POST /login at Tue Jul 12 2022 12:18:55 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"userLogin": "eduardo",
+	"password": "12345678"
+}
+Response Body:
+{
+	"data": {
+		"id": 1,
+		"name": "eduardo",
+		"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY1NzYzOTEzNSwiZXhwIjoxNjU3NjQyNzM1fQ.RoGnJ-f4p9GA2pLmihcHEUvzJVGXOxJbFv8wLtzhoa4"
+	}
+}
+Response: 200 87.336 ms 
+
+Request: OPTIONS /login at Tue Jul 12 2022 12:19:46 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.376 ms 
+
+Request: POST /login at Tue Jul 12 2022 12:19:46 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"userLogin": "admin@luby.com.br",
+	"password": "adminasdf"
+}
+Response: 500 29.801 ms 
+
+Request: OPTIONS /login at Tue Jul 12 2022 12:20:06 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.226 ms 
+
+Request: POST /login at Tue Jul 12 2022 12:20:07 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"userLogin": "eduardo",
+	"password": "12345678"
+}
+Response Body:
+{
+	"data": {
+		"id": 1,
+		"name": "eduardo",
+		"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY1NzYzOTIwNywiZXhwIjoxNjU3NjQyODA3fQ.SLX1WuCLpiUn6gpcdnUxzpqVa0FA75rBHMOf_4zFLAk"
+	}
+}
+Response: 200 160.467 ms 
+
+Request: OPTIONS /login at Tue Jul 12 2022 12:21:19 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.363 ms 
+
+Request: POST /login at Tue Jul 12 2022 12:21:19 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"userLogin": "eduardo",
+	"password": "12345678"
+}
+Response Body:
+{
+	"data": {
+		"id": 1,
+		"name": "eduardo",
+		"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY1NzYzOTI3OSwiZXhwIjoxNjU3NjQyODc5fQ.E3634tdDa9ahdaRFJ_Yh6lm8HxW59mEKvdNEb3S8Zes"
+	}
+}
+Response: 200 37.592 ms 
+
+Request: OPTIONS /login at Tue Jul 12 2022 12:22:09 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.179 ms 
+
+Request: POST /login at Tue Jul 12 2022 12:22:09 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"userLogin": "eduardo",
+	"password": "12345678"
+}
+Response Body:
+{
+	"data": {
+		"id": 1,
+		"name": "eduardo",
+		"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY1NzYzOTMyOSwiZXhwIjoxNjU3NjQyOTI5fQ.9RzyzGWI6lUYMeeddPFgfkkJvagFV0TsHhZj_Z8LDRY"
+	}
+}
+Response: 200 170.807 ms 
+
+Request: OPTIONS /login at Tue Jul 12 2022 12:22:38 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.193 ms 
+
+Request: POST /login at Tue Jul 12 2022 12:22:38 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"userLogin": "eduardo",
+	"password": "12345678"
+}
+Response Body:
+{
+	"data": {
+		"id": 1,
+		"name": "eduardo",
+		"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY1NzYzOTM1OCwiZXhwIjoxNjU3NjQyOTU4fQ.p87p_zKE_oulMkwPxy_UV89mUB5QDqdesXrWUAk3sps"
+	}
+}
+Response: 200 43.388 ms 
+
+Request: OPTIONS /login at Tue Jul 12 2022 12:23:12 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 1.666 ms 
+
+Request: POST /login at Tue Jul 12 2022 12:23:13 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"userLogin": "eduardo",
+	"password": "12345678"
+}
+Response Body:
+{
+	"data": {
+		"id": 1,
+		"name": "eduardo",
+		"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY1NzYzOTM5MywiZXhwIjoxNjU3NjQyOTkzfQ.to9bE0WfzsGhYHzK3YDZh8FHZOML-TZCXee3LXTtpeI"
+	}
+}
+Response: 200 464.789 ms 
+
+Request: OPTIONS /login at Tue Jul 12 2022 12:24:07 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 2.005 ms 
+
+Request: POST /login at Tue Jul 12 2022 12:24:07 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"userLogin": "eduardo",
+	"password": "12345678"
+}
+Response Body:
+{
+	"id": 1,
+	"name": "eduardo",
+	"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY1NzYzOTQ0NywiZXhwIjoxNjU3NjQzMDQ3fQ.xW-un2FNUfvAQilqe7T2r_TdyCSaDaORgpEqEl8PbLc"
+}
+Response: 200 62.028 ms 
+
+Request: OPTIONS /login at Tue Jul 12 2022 12:24:17 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.427 ms 
+
+Request: POST /login at Tue Jul 12 2022 12:24:17 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"userLogin": "eduardo",
+	"password": "12345678asf"
+}
+Response Body:
+{
+	"message": "Dados inválidos"
+}
+Response: 404 30.240 ms 
+
+Request: OPTIONS /login at Tue Jul 12 2022 12:24:44 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.251 ms 
+
+Request: POST /login at Tue Jul 12 2022 12:24:44 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"userLogin": "eduardo",
+	"password": "12345678"
+}
+Response Body:
+{
+	"id": 1,
+	"name": "eduardo",
+	"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY1NzYzOTQ4NCwiZXhwIjoxNjU3NjQzMDg0fQ.OMLJPoEbmDDpYGenovsgXf5wCrXCiLCiQwQKmwROWw4"
+}
+Response: 200 40.553 ms 
+
+Request: OPTIONS /login at Tue Jul 12 2022 23:01:18 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+Response: 204 2.089 ms 
+
+Request: POST /login at Tue Jul 12 2022 23:01:18 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+Request Body:
+{
+	"userLogin": "eduardo ",
+	"password": "12345678"
+}
+Response Body:
+{
+	"id": 1,
+	"name": "eduardo",
+	"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY1NzY3NzY3OCwiZXhwIjoxNjU3NjgxMjc4fQ.5N_aqsw4pwZpQrYcHEaQ4tjsSkm6Z20MzRVqJibrShM"
+}
+Response: 200 71.806 ms 
+
+Request: OPTIONS /login at Tue Jul 12 2022 23:08:22 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.370 ms 
+
+Request: POST /login at Tue Jul 12 2022 23:08:22 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"userLogin": "eduardo",
+	"password": "12345678"
+}
+Response Body:
+{
+	"id": 1,
+	"name": "eduardo",
+	"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY1NzY3ODEwMiwiZXhwIjoxNjU3NjgxNzAyfQ.Ie87DytXyEAFNdrjv24PteELPTztV6gBN-vpxxdd5LM"
+}
+Response: 200 35.933 ms 
+
+Request: OPTIONS /users at Tue Jul 12 2022 23:19:39 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 2.188 ms 
+
+Request: POST /users at Tue Jul 12 2022 23:19:39 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"name": "pedro",
+	"username": "pedro",
+	"password": "12345678"
+}
+Response Body:
+{
+	"error": "Usuário não encontrado "
+}
+Response: 400 24.109 ms 
+
+Request: OPTIONS /users at Tue Jul 12 2022 23:25:19 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 2.697 ms 
+
+Request: POST /users at Tue Jul 12 2022 23:25:25 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"name": "pedro",
+	"username": "pedro",
+	"password": "12345678"
+}
+Response: 500 5524.160 ms 
+
+Request: OPTIONS /users at Tue Jul 12 2022 23:25:28 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.477 ms 
+
+Request: POST /users at Tue Jul 12 2022 23:25:33 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"name": "pedro",
+	"username": "pedro",
+	"password": "12345678"
+}
+Response: 500 5354.662 ms 
+
+Request: OPTIONS /users at Tue Jul 12 2022 23:29:07 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 2.195 ms 
+
+Request: POST /users at Tue Jul 12 2022 23:29:13 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"name": "pedro",
+	"userLogin": "pedro",
+	"password": "12345678"
+}
+Response: 500 5385.252 ms 
+
+Request: OPTIONS /users at Tue Jul 12 2022 23:30:48 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 2.143 ms 
+
+Request: POST /users at Tue Jul 12 2022 23:30:54 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"name": "pedro",
+	"userLogin": "pedro",
+	"password": "12345678"
+}
+Response: 500 5394.803 ms 
+
+Request: OPTIONS /users at Tue Jul 12 2022 23:31:54 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 1.937 ms 
+
+Request: POST /users at Tue Jul 12 2022 23:32:00 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"name": "pedro",
+	"userLogin": "pedro",
+	"password": "12345678"
+}
+Response Body:
+{
+	"data": {
+		"id": 6,
+		"name": "pedro",
+		"userLogin": "pedro"
+	}
+}
+Response: 201 5576.366 ms 
+
+Request: OPTIONS /login at Tue Jul 12 2022 23:32:25 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.374 ms 
+
+Request: POST /login at Tue Jul 12 2022 23:32:30 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"userLogin": "pedro",
+	"password": "12345678"
+}
+Response Body:
+{
+	"id": 6,
+	"name": "pedro",
+	"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjYsImlhdCI6MTY1NzY3OTU1MCwiZXhwIjoxNjU3NjgzMTUwfQ.A4HmOJTe2ZpaPWiKNZK5qEGR9TI7rLKKiV45erGXnFY"
+}
+Response: 200 5377.540 ms 
+
+Request: OPTIONS /login at Tue Jul 12 2022 23:33:14 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.207 ms 
+
+Request: POST /login at Tue Jul 12 2022 23:33:14 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"userLogin": "eduardo",
+	"password": "12345678"
+}
+Response Body:
+{
+	"id": 1,
+	"name": "eduardo",
+	"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY1NzY3OTU5NCwiZXhwIjoxNjU3NjgzMTk0fQ.vxps-EkK5KATD-CXqUMflPeEmJAe-yV_W4hhhqYUrY8"
+}
+Response: 200 34.343 ms 
+
+Request: OPTIONS /login at Tue Jul 12 2022 23:33:20 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.384 ms 
+
+Request: POST /login at Tue Jul 12 2022 23:33:25 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"userLogin": "pedro",
+	"password": "12345678"
+}
+Response Body:
+{
+	"id": 6,
+	"name": "pedro",
+	"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjYsImlhdCI6MTY1NzY3OTYwNSwiZXhwIjoxNjU3NjgzMjA1fQ.iyQDv477nrGTp9ulsJVSTe579K_UyHd7z33mrR6Tn_g"
+}
+Response: 200 5433.012 ms 
+
+Request: OPTIONS /users at Tue Jul 12 2022 23:33:54 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.172 ms 
+
+Request: POST /users at Tue Jul 12 2022 23:34:00 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"name": "thiago",
+	"userLogin": "thiago",
+	"password": "12345678"
+}
+Response Body:
+{
+	"data": {
+		"id": 7,
+		"name": "thiago",
+		"userLogin": "thiago"
+	}
+}
+Response: 201 5406.903 ms 
+
+Request: OPTIONS /login at Tue Jul 12 2022 23:34:40 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.190 ms 
+
+Request: POST /login at Tue Jul 12 2022 23:34:45 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"userLogin": "thiago",
+	"password": "12345678"
+}
+Response Body:
+{
+	"id": 7,
+	"name": "thiago",
+	"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjcsImlhdCI6MTY1NzY3OTY4NSwiZXhwIjoxNjU3NjgzMjg1fQ.BGF_IpuikGoG4Kt_VG21w9QEs-m0Yz7rPXM0eTqWjQw"
+}
+Response: 200 5411.548 ms 
+
+Request: OPTIONS /login at Tue Jul 12 2022 23:36:48 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.196 ms 
+
+Request: POST /login at Tue Jul 12 2022 23:36:48 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"userLogin": "eduardodf",
+	"password": "12345678"
+}
+Response: 500 22.372 ms 
+
+Request: OPTIONS /users at Tue Jul 12 2022 23:40:32 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.200 ms 
+
+Request: POST /users at Tue Jul 12 2022 23:40:38 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"name": "Thiago Freire",
+	"userLogin": "thiagof",
+	"password": "12345678"
+}
+Response Body:
+{
+	"data": {
+		"id": 8,
+		"name": "Thiago Freire",
+		"userLogin": "thiagof"
+	}
+}
+Response: 201 5394.603 ms 
+
+Request: OPTIONS /users at Tue Jul 12 2022 23:42:08 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.193 ms 
+
+Request: POST /users at Tue Jul 12 2022 23:42:13 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"name": "jose",
+	"userLogin": "jose",
+	"password": "12345678"
+}
+Response Body:
+{
+	"data": {
+		"id": 9,
+		"name": "jose",
+		"userLogin": "jose"
+	}
+}
+Response: 201 5382.801 ms 
+
+Request: OPTIONS /users at Tue Jul 12 2022 23:45:16 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.444 ms 
+
+Request: POST /users at Tue Jul 12 2022 23:45:22 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"name": "jose santana",
+	"userLogin": "joses",
+	"password": "12345678"
+}
+Response Body:
+{
+	"data": {
+		"id": 10,
+		"name": "jose santana",
+		"userLogin": "joses"
+	}
+}
+Response: 201 5380.651 ms 
+
+Request: OPTIONS /usrs at Wed Jul 13 2022 00:01:38 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.661 ms 
+
+Request: POST /usrs at Wed Jul 13 2022 00:01:38 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"name": "asdfa",
+	"userLogin": "eduardo",
+	"password": "12345678"
+}
+Response: 404 2.006 ms 
+
+Request: OPTIONS /usrs at Wed Jul 13 2022 00:02:11 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.215 ms 
+
+Request: POST /usrs at Wed Jul 13 2022 00:02:11 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"name": "cleber",
+	"userLogin": "cleber",
+	"password": "12345678"
+}
+Response: 404 1.278 ms 
+
+Request: OPTIONS /users at Wed Jul 13 2022 00:02:21 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.199 ms 
+
+Request: POST /users at Wed Jul 13 2022 00:02:22 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"name": "cleber",
+	"userLogin": "cleber",
+	"password": "12345678"
+}
+Response: - - ms 
+
+Request: OPTIONS /users at Wed Jul 13 2022 00:02:30 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.203 ms 
+
+Request: POST /users at Wed Jul 13 2022 00:02:35 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"name": "cleber",
+	"userLogin": "cleber",
+	"password": "12345678"
+}
+Response Body:
+{
+	"data": {
+		"id": 12,
+		"name": "cleber",
+		"userLogin": "cleber"
+	}
+}
+Response: 201 5426.230 ms 
+
+Request: OPTIONS /users at Wed Jul 13 2022 00:04:08 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.201 ms 
+
+Request: POST /users at Wed Jul 13 2022 00:04:13 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"name": "junior",
+	"userLogin": "junior",
+	"password": "12345678"
+}
+Response Body:
+{
+	"data": {
+		"id": 13,
+		"name": "junior",
+		"userLogin": "junior"
+	}
+}
+Response: 201 5397.332 ms 
+
+Request: OPTIONS /users at Wed Jul 13 2022 00:20:07 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.186 ms 
+
+Request: POST /users at Wed Jul 13 2022 00:20:13 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"name": "bastiel",
+	"userLogin": "bastiel",
+	"password": "12345678"
+}
+Response Body:
+{
+	"data": {
+		"id": 14,
+		"name": "bastiel",
+		"userLogin": "bastiel"
+	}
+}
+Response: 201 5359.989 ms 
+
+Request: OPTIONS /clients at Wed Jul 13 2022 00:23:24 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.170 ms 
+
+Request: POST /clients at Wed Jul 13 2022 00:23:24 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"companyName": "abel",
+	"cnpj": "12354678912345",
+	"address": "rua 6 qd 3 lt 19 csa 1 lourdes"
+}
+Response Body:
+{
+	"data": {
+		"id": 1,
+		"companyName": "abel",
+		"cnpj": "12354678912345",
+		"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+		"updatedAt": "2022-07-13T03:23:24.574Z",
+		"createdAt": "2022-07-13T03:23:24.574Z"
+	}
+}
+Response: 201 29.970 ms 
+
+Request: OPTIONS /login at Wed Jul 13 2022 00:29:26 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.166 ms 
+
+Request: POST /login at Wed Jul 13 2022 00:29:26 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"userLogin": "eduardo",
+	"password": "12345678"
+}
+Response Body:
+{
+	"id": 1,
+	"name": "eduardo",
+	"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY1NzY4Mjk2NiwiZXhwIjoxNjU3Njg2NTY2fQ.mw78ZTmQTtIffNDeoAgNXI1T_Q2kPN1IxiLhIxB25Ak"
+}
+Response: 200 35.145 ms 

@@ -26,18 +26,16 @@ export const getClients = async (req: Request, res: Response, next: NextFunction
 
 export const getClient = async (req: Request, res: Response, next: NextFunction) => {
     try {
-        const clientId = req.params.id 
+        const companyName = req.params.companyName
 
-        const client = await ClientModel.findOne({
-            where: { clientId }
+        const clients = await ClientModel.findAll({
+            where: { companyName }
         })
-        if (!client) {
+        if (!clients) {
             return res.status(400).send({ error: "Cliente não encontrado" });
         }
 
-        return res.status(200).json({
-            data: client
-        })
+        return res.status(200).json(clients)
     } catch (error: any) {
         return next(new Error(error))
     }

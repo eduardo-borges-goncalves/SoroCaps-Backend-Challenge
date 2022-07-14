@@ -13,23 +13,23 @@ router.post('/login', signIn);
 
 router.use(authentication)
 
-router.get('/user', getUsers);
-router.get('/user/:id', getUser);
-router.post('/user', postUser);
-router.put('/user/:id', updateUser);
-router.delete('/user/:id', deleteUser);
+router.get('/users', getUsers);
+router.get('/users/:id', getUser);
+router.post('/users', postUser);
+router.put('/users/:id', updateUser);
+router.delete('/users/:id', deleteUser);
 
-router.get('/client', getClients);
-router.get('/client/:id', getClient);
-router.post('/client', postClient);
-router.put('/client/:id', updateClient);
-router.delete('/client/:id', deleteClient);
+router.get('/clients', getClients);
+router.get('/clients/:companyName', getClient);
+router.post('/clients', postClient);
+router.put('/clients/:id', updateClient);
+router.delete('/clients/:id', deleteClient);
 
-router.get('/product', getProducts);
-router.get('/product/:id', getProduct);
-router.post('/product', postProduct);
-router.put('/product/:id', updateProduct);
-router.delete('/product/:id', deleteProduct);
+router.get('/products', getProducts);
+router.get('/products/:name', getProduct);
+router.post('/products', postProduct);
+router.put('/products/:id', updateProduct);
+router.delete('/products/:id', deleteProduct);
 
 router.get('/product/sales-order', getProducts);
 router.get('/product/sales-order/:id', getProduct);
@@ -37,10 +37,10 @@ router.post('/product/sales-order', postProduct);
 router.put('/product/sales-order/:id', updateProduct);
 router.delete('/product/sales-order/:id', deleteProduct);
 
-router.get('/sales-order', getSalesOrders);
-router.get('/sales-order/:id', getSalesOrder);
-router.post('/sales-order', postSalesOrder);
-router.put('/sales-order/:id', updateSalesOrder);
-router.delete('/sales-order/:id', deleteSalesOrder);
+router.get('/sales-orders', getSalesOrders);
+router.get('/sales-orders/:id', getSalesOrder);
+router.post('/sales-orders', postSalesOrder);
+router.put('/sales-orders/:id', updateSalesOrder);
+router.delete('/sales-orders/:id', deleteSalesOrder);
 
 export default router; 

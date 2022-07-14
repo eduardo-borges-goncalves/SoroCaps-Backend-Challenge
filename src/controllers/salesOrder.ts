@@ -1,4 +1,5 @@
 import { Request, Response, NextFunction } from "express"
+import { ClientModel } from "../models/client"
 import { ProductSalesOrderModel } from "../models/productSalesOrder"
 import { SalesOrderModel } from "../models/salesOrder"
 
@@ -15,17 +16,26 @@ interface SalesOrder {
 
 export const getSalesOrders = async (req: Request, res: Response, next: NextFunction) => {
     try {
+        const teste = await ClientModel.findAll({
+            include: [{
+                model: SalesOrderModel, 
+                include: [ProductSalesOrderModel]
+            }]
+        })
+
+        // console.log()
+
         const salesOrders = await SalesOrderModel.findAll({
             include: [{
                 model: ProductSalesOrderModel,
-                as: "productSales"
-            }]
+            }],
+            
         })
         if (salesOrders.length === 0) {
             return res.status(204).send({ message: "Nenhum pedido de venda cadastrado" })
         }
 
-        return res.status(200).json({ data: salesOrders })
+        return res.status(200).json(teste)
     } catch (error: any) {
         return next(new Error(error))
     }
@@ -37,14 +47,13 @@ export const getSalesOrder = async (req: Request, res: Response, next: NextFunct
             where: { id: req.params.id },
             include: [{
                 model: ProductSalesOrderModel,
-                as: "productSales"
             }]
         })
         if (!salesOrder) {
             return res.status(400).send({ error: "Pedido de venda não encontrado" });
         }
 
-        return res.status(200).json({ data: salesOrder })
+        return res.status(200).json(salesOrder)
     } catch (error: any) {
         return next(new Error(error))
     }
@@ -80,7 +89,7 @@ export const postSalesOrder = async (req: Request, res: Response, next: NextFunc
             }],
         })
 
-        return res.status(201).json({ data: salesOrderWithProducts })
+        return res.status(201).json(salesOrderWithProducts)
     } catch (error: any) {
         return next(new Error(error));
     }

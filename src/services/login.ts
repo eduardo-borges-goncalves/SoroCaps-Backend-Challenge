@@ -9,12 +9,12 @@ export const login = async (userLogin: string, password: string) => {
   })
 
   if (await bcrypt.compare(password, user.password)) {
-    const token = createToken(user.id)
+    const access_token = createToken(user.id)
 
     return {
       id: user.id,
       name: user.name,
-      token
+      access_token
     }
   }
 }

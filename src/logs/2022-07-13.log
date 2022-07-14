@@ -1,0 +1,1413 @@
+
+Request: OPTIONS /products at Wed Jul 13 2022 21:31:12 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 2.307 ms 
+
+Request: POST /products at Wed Jul 13 2022 21:31:12 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"name": "coca cola",
+	"description": "refrigerante",
+	"pricePurchase": "2.99",
+	"priceSales": "2.99"
+}
+Response Body:
+{
+	"message": "Token inválido!"
+}
+Response: 401 83.818 ms 
+
+Request: OPTIONS /login at Wed Jul 13 2022 21:31:31 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.234 ms 
+
+Request: POST /login at Wed Jul 13 2022 21:31:32 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"userLogin": "eduardo",
+	"password": "12345678"
+}
+Response Body:
+{
+	"id": 1,
+	"name": "eduardo",
+	"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY1Nzc1ODY5MiwiZXhwIjoxNjU3NzYyMjkyfQ.9WN0jllsW4J1U-h_87FjnUNqodP2ToIDH4GbFS5MD0A"
+}
+Response: 200 1012.229 ms 
+
+Request: OPTIONS /products at Wed Jul 13 2022 21:32:00 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.376 ms 
+
+Request: POST /products at Wed Jul 13 2022 21:32:00 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"name": "coca cola",
+	"description": "refrigerante",
+	"pricePurchase": "2.99",
+	"priceSales": "8.99"
+}
+Response Body:
+{
+	"data": ""
+}
+Response: 201 3.187 ms 
+
+Request: OPTIONS /clients at Wed Jul 13 2022 22:53:04 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 1.765 ms 
+
+Request: GET /clients at Wed Jul 13 2022 22:53:04 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"message": "Token inválido!"
+}
+Response: 401 3.452 ms 
+
+Request: GET /clients at Wed Jul 13 2022 22:53:08 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"message": "Token inválido!"
+}
+Response: 401 1.089 ms 
+
+Request: OPTIONS /login at Wed Jul 13 2022 22:53:15 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.192 ms 
+
+Request: POST /login at Wed Jul 13 2022 22:53:15 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"userLogin": "eduardo",
+	"password": "12345678"
+}
+Response Body:
+{
+	"id": 1,
+	"name": "eduardo",
+	"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY1Nzc2MzU5NSwiZXhwIjoxNjU3NzY3MTk1fQ.8WAivmTUzcDKOXjQC-3AwvZCVA4lBVN08ZE7S6jJ_Ks"
+}
+Response: 200 84.706 ms 
+
+Request: OPTIONS /clients at Wed Jul 13 2022 22:53:25 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.187 ms 
+
+Request: GET /clients at Wed Jul 13 2022 22:53:25 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"data": [
+		{
+			"id": 1,
+			"companyName": "abel",
+			"cnpj": "12354678912345",
+			"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+			"createdAt": "2022-07-13T03:23:24.000Z",
+			"updatedAt": "2022-07-13T03:23:24.000Z"
+		}
+	]
+}
+Response: 200 17.165 ms 
+
+Request: GET /clients at Wed Jul 13 2022 22:53:29 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"data": [
+		{
+			"id": 1,
+			"companyName": "abel",
+			"cnpj": "12354678912345",
+			"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+			"createdAt": "2022-07-13T03:23:24.000Z",
+			"updatedAt": "2022-07-13T03:23:24.000Z"
+		}
+	]
+}
+Response: 304 3.725 ms 
+
+Request: OPTIONS /clients;abel at Wed Jul 13 2022 22:56:02 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 2.245 ms 
+
+Request: GET /clients;abel at Wed Jul 13 2022 22:56:03 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 404 8.539 ms 
+
+Request: OPTIONS /clients; at Wed Jul 13 2022 22:56:11 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.231 ms 
+
+Request: GET /clients; at Wed Jul 13 2022 22:56:11 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 404 1.423 ms 
+
+Request: OPTIONS /clients/abel at Wed Jul 13 2022 22:56:59 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.183 ms 
+
+Request: GET /clients/abel at Wed Jul 13 2022 22:56:59 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"data": {
+		"id": 1,
+		"companyName": "abel",
+		"cnpj": "12354678912345",
+		"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+		"createdAt": "2022-07-13T03:23:24.000Z",
+		"updatedAt": "2022-07-13T03:23:24.000Z"
+	}
+}
+Response: 200 29.456 ms 
+
+Request: OPTIONS /clients/ at Wed Jul 13 2022 22:57:03 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.461 ms 
+
+Request: GET /clients/ at Wed Jul 13 2022 22:57:03 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"data": [
+		{
+			"id": 1,
+			"companyName": "abel",
+			"cnpj": "12354678912345",
+			"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+			"createdAt": "2022-07-13T03:23:24.000Z",
+			"updatedAt": "2022-07-13T03:23:24.000Z"
+		}
+	]
+}
+Response: 200 5.894 ms 
+
+Request: OPTIONS /clients/abel at Wed Jul 13 2022 23:00:59 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 2.465 ms 
+
+Request: GET /clients/abel at Wed Jul 13 2022 23:00:59 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"clients": [
+		{
+			"id": 1,
+			"companyName": "abel",
+			"cnpj": "12354678912345",
+			"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+			"createdAt": "2022-07-13T03:23:24.000Z",
+			"updatedAt": "2022-07-13T03:23:24.000Z"
+		}
+	]
+}
+Response: 200 23.275 ms 
+
+Request: OPTIONS /clients/abel at Wed Jul 13 2022 23:01:07 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.214 ms 
+
+Request: GET /clients/abel at Wed Jul 13 2022 23:01:07 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"clients": [
+		{
+			"id": 1,
+			"companyName": "abel",
+			"cnpj": "12354678912345",
+			"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+			"createdAt": "2022-07-13T03:23:24.000Z",
+			"updatedAt": "2022-07-13T03:23:24.000Z"
+		}
+	]
+}
+Response: 304 6.212 ms 
+
+Request: OPTIONS /clients/abel at Wed Jul 13 2022 23:01:44 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.218 ms 
+
+Request: GET /clients/abel at Wed Jul 13 2022 23:01:44 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"clients": [
+		{
+			"id": 1,
+			"companyName": "abel",
+			"cnpj": "12354678912345",
+			"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+			"createdAt": "2022-07-13T03:23:24.000Z",
+			"updatedAt": "2022-07-13T03:23:24.000Z"
+		}
+	]
+}
+Response: 304 15.960 ms 
+
+Request: OPTIONS /clients/ at Wed Jul 13 2022 23:01:47 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.338 ms 
+
+Request: GET /clients/ at Wed Jul 13 2022 23:01:47 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"data": [
+		{
+			"id": 1,
+			"companyName": "abel",
+			"cnpj": "12354678912345",
+			"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+			"createdAt": "2022-07-13T03:23:24.000Z",
+			"updatedAt": "2022-07-13T03:23:24.000Z"
+		}
+	]
+}
+Response: 304 5.719 ms 
+
+Request: OPTIONS /clients/clien at Wed Jul 13 2022 23:02:13 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.186 ms 
+
+Request: GET /clients/clien at Wed Jul 13 2022 23:02:13 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"clients": []
+}
+Response: 200 12.849 ms 
+
+Request: OPTIONS /clients/ at Wed Jul 13 2022 23:02:16 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.190 ms 
+
+Request: GET /clients/ at Wed Jul 13 2022 23:02:16 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"data": [
+		{
+			"id": 1,
+			"companyName": "abel",
+			"cnpj": "12354678912345",
+			"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+			"createdAt": "2022-07-13T03:23:24.000Z",
+			"updatedAt": "2022-07-13T03:23:24.000Z"
+		}
+	]
+}
+Response: 304 4.030 ms 
+
+Request: OPTIONS /clients/a at Wed Jul 13 2022 23:02:16 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.206 ms 
+
+Request: GET /clients/a at Wed Jul 13 2022 23:02:16 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"clients": []
+}
+Response: 200 8.804 ms 
+
+Request: OPTIONS /clients/abel at Wed Jul 13 2022 23:02:23 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.187 ms 
+
+Request: GET /clients/abel at Wed Jul 13 2022 23:02:23 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"clients": [
+		{
+			"id": 1,
+			"companyName": "abel",
+			"cnpj": "12354678912345",
+			"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+			"createdAt": "2022-07-13T03:23:24.000Z",
+			"updatedAt": "2022-07-13T03:23:24.000Z"
+		}
+	]
+}
+Response: 304 4.675 ms 
+
+Request: OPTIONS /clients/abel at Wed Jul 13 2022 23:03:57 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.182 ms 
+
+Request: GET /clients/abel at Wed Jul 13 2022 23:03:57 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"clients": [
+		{
+			"id": 1,
+			"companyName": "abel",
+			"cnpj": "12354678912345",
+			"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+			"createdAt": "2022-07-13T03:23:24.000Z",
+			"updatedAt": "2022-07-13T03:23:24.000Z"
+		}
+	]
+}
+Response: 304 11.635 ms 
+
+Request: OPTIONS /clients/abel at Wed Jul 13 2022 23:05:24 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.423 ms 
+
+Request: GET /clients/abel at Wed Jul 13 2022 23:05:24 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"clients": [
+		{
+			"id": 1,
+			"companyName": "abel",
+			"cnpj": "12354678912345",
+			"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+			"createdAt": "2022-07-13T03:23:24.000Z",
+			"updatedAt": "2022-07-13T03:23:24.000Z"
+		}
+	]
+}
+Response: 304 14.130 ms 
+
+Request: OPTIONS /clients/abel at Wed Jul 13 2022 23:11:59 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.253 ms 
+
+Request: GET /clients/abel at Wed Jul 13 2022 23:11:59 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"clients": [
+		{
+			"id": 1,
+			"companyName": "abel",
+			"cnpj": "12354678912345",
+			"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+			"createdAt": "2022-07-13T03:23:24.000Z",
+			"updatedAt": "2022-07-13T03:23:24.000Z"
+		}
+	]
+}
+Response: 304 14.522 ms 
+
+Request: OPTIONS /clients/ at Wed Jul 13 2022 23:12:01 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.194 ms 
+
+Request: GET /clients/ at Wed Jul 13 2022 23:12:01 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"data": [
+		{
+			"id": 1,
+			"companyName": "abel",
+			"cnpj": "12354678912345",
+			"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+			"createdAt": "2022-07-13T03:23:24.000Z",
+			"updatedAt": "2022-07-13T03:23:24.000Z"
+		}
+	]
+}
+Response: 304 3.807 ms 
+
+Request: OPTIONS /clients/abel at Wed Jul 13 2022 23:12:56 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.184 ms 
+
+Request: GET /clients/abel at Wed Jul 13 2022 23:12:56 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"clients": [
+		{
+			"id": 1,
+			"companyName": "abel",
+			"cnpj": "12354678912345",
+			"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+			"createdAt": "2022-07-13T03:23:24.000Z",
+			"updatedAt": "2022-07-13T03:23:24.000Z"
+		}
+	]
+}
+Response: 304 13.329 ms 
+
+Request: OPTIONS /products/a at Wed Jul 13 2022 23:28:28 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 2.244 ms 
+
+Request: GET /products/a at Wed Jul 13 2022 23:28:28 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 500 20.522 ms 
+
+Request: OPTIONS /products/ at Wed Jul 13 2022 23:28:36 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.367 ms 
+
+Request: GET /products/ at Wed Jul 13 2022 23:28:36 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"data": ""
+}
+Response: 200 4.091 ms 
+
+Request: OPTIONS /products/coca%20cola at Wed Jul 13 2022 23:33:10 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 2.000 ms 
+
+Request: GET /products/coca%20cola at Wed Jul 13 2022 23:33:10 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 500 101.115 ms 
+
+Request: OPTIONS /products/ at Wed Jul 13 2022 23:33:16 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.365 ms 
+
+Request: GET /products/ at Wed Jul 13 2022 23:33:16 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"data": ""
+}
+Response: 304 3.624 ms 
+
+Request: OPTIONS /products/coca%20cola at Wed Jul 13 2022 23:35:07 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.199 ms 
+
+Request: GET /products/coca%20cola at Wed Jul 13 2022 23:35:07 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 500 10.893 ms 
+
+Request: OPTIONS /products/ at Wed Jul 13 2022 23:35:18 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 2.276 ms 
+
+Request: GET /products/ at Wed Jul 13 2022 23:35:18 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"data": ""
+}
+Response: 304 0.953 ms 
+
+Request: OPTIONS /products/abel at Wed Jul 13 2022 23:42:06 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 2.018 ms 
+
+Request: GET /products/abel at Wed Jul 13 2022 23:42:06 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"products": []
+}
+Response: 200 29.023 ms 
+
+Request: OPTIONS /products/coca%20cola at Wed Jul 13 2022 23:42:13 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.224 ms 
+
+Request: GET /products/coca%20cola at Wed Jul 13 2022 23:42:13 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"products": []
+}
+Response: 200 4.883 ms 
+
+Request: OPTIONS /products/ at Wed Jul 13 2022 23:42:16 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.203 ms 
+
+Request: GET /products/ at Wed Jul 13 2022 23:42:16 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"data": ""
+}
+Response: 304 1.280 ms 
+
+Request: OPTIONS /products at Wed Jul 13 2022 23:43:02 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.218 ms 
+
+Request: POST /products at Wed Jul 13 2022 23:43:02 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"name": "coca",
+	"description": "refrigerante",
+	"pricePurchase": "2.99",
+	"priceSales": "8.99"
+}
+Response Body:
+{
+	"data": ""
+}
+Response: 201 39.191 ms 
+
+Request: OPTIONS /products/coca at Wed Jul 13 2022 23:43:15 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.173 ms 
+
+Request: GET /products/coca at Wed Jul 13 2022 23:43:15 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"products": []
+}
+Response: 200 13.374 ms 
+
+Request: OPTIONS /products/ at Wed Jul 13 2022 23:43:19 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.182 ms 
+
+Request: GET /products/ at Wed Jul 13 2022 23:43:19 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"data": ""
+}
+Response: 304 0.826 ms 
+
+Request: OPTIONS /products at Wed Jul 13 2022 23:47:33 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 3.190 ms 
+
+Request: POST /products at Wed Jul 13 2022 23:47:33 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"name": "coca",
+	"description": "refrigerante",
+	"pricePurchase": "2.99",
+	"priceSales": "8.99"
+}
+Response: 500 72.359 ms 
+
+Request: OPTIONS /products at Wed Jul 13 2022 23:49:23 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.392 ms 
+
+Request: POST /products at Wed Jul 13 2022 23:49:23 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"name": "coca",
+	"description": "refrigerante",
+	"pricePurchase": "2.99",
+	"priceSales": "8.99"
+}
+Response: 500 5.329 ms 
+
+Request: OPTIONS /products at Wed Jul 13 2022 23:52:31 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.243 ms 
+
+Request: POST /products at Wed Jul 13 2022 23:52:31 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"codeProduct": "01",
+	"name": "coca",
+	"description": "refrigerante",
+	"measurmentUnit": "litro",
+	"pricePurchase": "2.99",
+	"priceSales": "8.99"
+}
+Response: 500 2.623 ms 
+
+Request: OPTIONS /products at Wed Jul 13 2022 23:53:52 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.425 ms 
+
+Request: POST /products at Wed Jul 13 2022 23:53:52 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"codeProduct": "01",
+	"name": "Thiago Freire",
+	"description": "refrigerante",
+	"measurementUnit": "litro",
+	"pricePurchase": "2.99",
+	"priceSales": "8.99"
+}
+Response Body:
+{
+	"message": "Token inválido!"
+}
+Response: 401 3.363 ms 
+
+Request: OPTIONS /login at Wed Jul 13 2022 23:53:59 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.442 ms 
+
+Request: POST /login at Wed Jul 13 2022 23:53:59 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"userLogin": "eduardo",
+	"password": "12345678"
+}
+Response Body:
+{
+	"id": 1,
+	"name": "eduardo",
+	"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY1Nzc2NzIzOSwiZXhwIjoxNjU3NzcwODM5fQ.T-iXH5f-9er0Ksx2kDWpQvkhAzf2KnoaFUw0IK794bQ"
+}
+Response: 200 88.545 ms 
+
+Request: OPTIONS /products at Wed Jul 13 2022 23:54:03 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.201 ms 
+
+Request: POST /products at Wed Jul 13 2022 23:54:03 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"codeProduct": "01",
+	"name": "Thiago Freire",
+	"description": "refrigerante",
+	"measurementUnit": "litro",
+	"pricePurchase": "2.99",
+	"priceSales": "8.99"
+}
+Response Body:
+{
+	"product": {
+		"codeProduct": "01",
+		"name": "Thiago Freire",
+		"description": "refrigerante",
+		"measurementUnit": "litro",
+		"pricePurchase": "2.99",
+		"priceSales": "8.99",
+		"updatedAt": "2022-07-14T02:54:03.766Z",
+		"createdAt": "2022-07-14T02:54:03.766Z"
+	}
+}
+Response: 201 18.181 ms 
+
+Request: OPTIONS /products/thiago at Wed Jul 13 2022 23:54:18 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.196 ms 
+
+Request: GET /products/thiago at Wed Jul 13 2022 23:54:18 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"products": []
+}
+Response: 200 10.483 ms 
+
+Request: OPTIONS /products/ at Wed Jul 13 2022 23:54:21 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.201 ms 
+
+Request: GET /products/ at Wed Jul 13 2022 23:54:21 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"data": ""
+}
+Response: 304 6.089 ms 
+
+Request: OPTIONS /products/thiago%20f at Wed Jul 13 2022 23:54:47 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.188 ms 
+
+Request: GET /products/thiago%20f at Wed Jul 13 2022 23:54:47 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"products": []
+}
+Response: 200 10.425 ms 
+
+Request: OPTIONS /products/thiago%20freire at Wed Jul 13 2022 23:54:48 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.218 ms 
+
+Request: GET /products/thiago%20freire at Wed Jul 13 2022 23:54:48 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"products": [
+		{
+			"codeProduct": 1,
+			"name": "Thiago Freire",
+			"description": "refrigerante",
+			"measurementUnit": "litro",
+			"pricePurchase": 3,
+			"priceSales": 9,
+			"createdAt": "2022-07-14T02:54:03.000Z",
+			"updatedAt": "2022-07-14T02:54:03.000Z"
+		}
+	]
+}
+Response: 200 4.941 ms 
+
+Request: OPTIONS /products/ at Wed Jul 13 2022 23:54:51 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.233 ms 
+
+Request: GET /products/ at Wed Jul 13 2022 23:54:51 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"data": ""
+}
+Response: 304 1.122 ms 
+
+Request: OPTIONS /products/thiago%20freire at Wed Jul 13 2022 23:55:05 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.196 ms 
+
+Request: GET /products/thiago%20freire at Wed Jul 13 2022 23:55:05 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"products": [
+		{
+			"codeProduct": 1,
+			"name": "Thiago Freire",
+			"description": "refrigerante",
+			"measurementUnit": "litro",
+			"pricePurchase": 3,
+			"priceSales": 9,
+			"createdAt": "2022-07-14T02:54:03.000Z",
+			"updatedAt": "2022-07-14T02:54:03.000Z"
+		}
+	]
+}
+Response: 304 10.897 ms 
+
+Request: OPTIONS /products/thiago%20freire at Wed Jul 13 2022 23:55:10 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.188 ms 
+
+Request: GET /products/thiago%20freire at Wed Jul 13 2022 23:55:10 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"products": [
+		{
+			"codeProduct": 1,
+			"name": "Thiago Freire",
+			"description": "refrigerante",
+			"measurementUnit": "litro",
+			"pricePurchase": 3,
+			"priceSales": 9,
+			"createdAt": "2022-07-14T02:54:03.000Z",
+			"updatedAt": "2022-07-14T02:54:03.000Z"
+		}
+	]
+}
+Response: 304 4.628 ms 
+
+Request: OPTIONS /products/ at Wed Jul 13 2022 23:55:13 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.179 ms 
+
+Request: GET /products/ at Wed Jul 13 2022 23:55:13 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"data": ""
+}
+Response: 304 0.797 ms 
+
+Request: OPTIONS /products/thiago%20freire at Wed Jul 13 2022 23:55:59 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.221 ms 
+
+Request: GET /products/thiago%20freire at Wed Jul 13 2022 23:55:59 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"products": [
+		{
+			"codeProduct": 1,
+			"name": "Thiago Freire",
+			"description": "refrigerante",
+			"measurementUnit": "litro",
+			"pricePurchase": 3,
+			"priceSales": 9,
+			"createdAt": "2022-07-14T02:54:03.000Z",
+			"updatedAt": "2022-07-14T02:54:03.000Z"
+		}
+	]
+}
+Response: 304 9.468 ms 
+
+Request: OPTIONS /products/ at Wed Jul 13 2022 23:56:02 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.177 ms 
+
+Request: GET /products/ at Wed Jul 13 2022 23:56:02 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"data": ""
+}
+Response: 304 1.094 ms 
+
+Request: OPTIONS /products/t at Wed Jul 13 2022 23:56:35 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 2.268 ms 
+
+Request: OPTIONS /products/thiago%20freire at Wed Jul 13 2022 23:56:35 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.448 ms 
+
+Request: GET /products/t at Wed Jul 13 2022 23:56:35 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 200 82.839 ms 
+
+Request: GET /products/thiago%20freire at Wed Jul 13 2022 23:56:35 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+[
+	{
+		"codeProduct": 1,
+		"name": "Thiago Freire",
+		"description": "refrigerante",
+		"measurementUnit": "litro",
+		"pricePurchase": 3,
+		"priceSales": 9,
+		"createdAt": "2022-07-14T02:54:03.000Z",
+		"updatedAt": "2022-07-14T02:54:03.000Z"
+	}
+]
+Response: 200 96.689 ms 
+
+Request: OPTIONS /products/ at Wed Jul 13 2022 23:56:38 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.188 ms 
+
+Request: GET /products/ at Wed Jul 13 2022 23:56:38 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"data": ""
+}
+Response: 304 1.015 ms 
+
+Request: OPTIONS /products/thiago%20freire at Wed Jul 13 2022 23:57:20 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.366 ms 
+
+Request: GET /products/thiago%20freire at Wed Jul 13 2022 23:57:20 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+[
+	{
+		"codeProduct": 1,
+		"name": "Thiago Freire",
+		"description": "refrigerante",
+		"measurementUnit": "litro",
+		"pricePurchase": 3,
+		"priceSales": 9,
+		"createdAt": "2022-07-14T02:54:03.000Z",
+		"updatedAt": "2022-07-14T02:54:03.000Z"
+	}
+]
+Response: 304 11.822 ms 
+
+Request: OPTIONS /products/thiago%20freire at Wed Jul 13 2022 23:57:51 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.158 ms 
+
+Request: GET /products/thiago%20freire at Wed Jul 13 2022 23:57:51 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+[
+	{
+		"codeProduct": 1,
+		"name": "Thiago Freire",
+		"description": "refrigerante",
+		"measurementUnit": "litro",
+		"pricePurchase": 3,
+		"priceSales": 9,
+		"createdAt": "2022-07-14T02:54:03.000Z",
+		"updatedAt": "2022-07-14T02:54:03.000Z"
+	}
+]
+Response: 304 22.706 ms 
+
+Request: OPTIONS /products/ at Wed Jul 13 2022 23:57:54 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.182 ms 
+
+Request: GET /products/ at Wed Jul 13 2022 23:57:54 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"data": ""
+}
+Response: 304 0.864 ms 
+
+Request: OPTIONS /products/thiago%20freire at Wed Jul 13 2022 23:58:11 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.179 ms 
+
+Request: GET /products/thiago%20freire at Wed Jul 13 2022 23:58:11 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+[
+	{
+		"codeProduct": 1,
+		"name": "Thiago Freire",
+		"description": "refrigerante",
+		"measurementUnit": "litro",
+		"pricePurchase": 3,
+		"priceSales": 9,
+		"createdAt": "2022-07-14T02:54:03.000Z",
+		"updatedAt": "2022-07-14T02:54:03.000Z"
+	}
+]
+Response: 304 10.065 ms 
+
+Request: OPTIONS /products/ at Wed Jul 13 2022 23:58:16 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.173 ms 
+
+Request: GET /products/ at Wed Jul 13 2022 23:58:16 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"data": ""
+}
+Response: 304 0.897 ms 
+
+Request: OPTIONS /products/thiago%20freire at Wed Jul 13 2022 23:59:10 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 2.040 ms 
+
+Request: GET /products/thiago%20freire at Wed Jul 13 2022 23:59:10 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+[
+	{
+		"codeProduct": 1,
+		"name": "Thiago Freire",
+		"description": "refrigerante",
+		"measurementUnit": "litro",
+		"pricePurchase": 3,
+		"priceSales": 9,
+		"createdAt": "2022-07-14T02:54:03.000Z",
+		"updatedAt": "2022-07-14T02:54:03.000Z"
+	}
+]
+Response: 304 27.520 ms 
+
+Request: OPTIONS /clients/abel at Thu Jul 14 2022 00:00:07 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.232 ms 
+
+Request: GET /clients/abel at Thu Jul 14 2022 00:00:07 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+[
+	{
+		"id": 1,
+		"companyName": "abel",
+		"cnpj": "12354678912345",
+		"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+		"createdAt": "2022-07-13T03:23:24.000Z",
+		"updatedAt": "2022-07-13T03:23:24.000Z"
+	}
+]
+Response: 200 13.704 ms 
+
+Request: OPTIONS /clients/abel at Thu Jul 14 2022 00:00:43 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.191 ms 
+
+Request: GET /clients/abel at Thu Jul 14 2022 00:00:43 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response Body:
+[
+	{
+		"id": 1,
+		"companyName": "abel",
+		"cnpj": "12354678912345",
+		"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+		"createdAt": "2022-07-13T03:23:24.000Z",
+		"updatedAt": "2022-07-13T03:23:24.000Z"
+	}
+]
+Response: 304 8.926 ms 
+
+Request: OPTIONS /products/thiago%20freire at Thu Jul 14 2022 00:00:48 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.201 ms 
+
+Request: GET /products/thiago%20freire at Thu Jul 14 2022 00:00:48 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response Body:
+[
+	{
+		"codeProduct": 1,
+		"name": "Thiago Freire",
+		"description": "refrigerante",
+		"measurementUnit": "litro",
+		"pricePurchase": 3,
+		"priceSales": 9,
+		"createdAt": "2022-07-14T02:54:03.000Z",
+		"updatedAt": "2022-07-14T02:54:03.000Z"
+	}
+]
+Response: 304 5.009 ms 
+
+Request: OPTIONS /clients/asdf at Thu Jul 14 2022 00:01:43 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.162 ms 
+
+Request: GET /clients/asdf at Thu Jul 14 2022 00:01:43 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 200 10.682 ms 
+
+Request: OPTIONS /clients/ at Thu Jul 14 2022 00:01:44 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.183 ms 
+
+Request: GET /clients/ at Thu Jul 14 2022 00:01:44 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"data": [
+		{
+			"id": 1,
+			"companyName": "abel",
+			"cnpj": "12354678912345",
+			"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+			"createdAt": "2022-07-13T03:23:24.000Z",
+			"updatedAt": "2022-07-13T03:23:24.000Z"
+		}
+	]
+}
+Response: 304 4.396 ms 
+
+Request: OPTIONS /clients/ at Thu Jul 14 2022 00:01:50 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.395 ms 
+
+Request: GET /clients/ at Thu Jul 14 2022 00:01:50 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"data": [
+		{
+			"id": 1,
+			"companyName": "abel",
+			"cnpj": "12354678912345",
+			"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+			"createdAt": "2022-07-13T03:23:24.000Z",
+			"updatedAt": "2022-07-13T03:23:24.000Z"
+		}
+	]
+}
+Response: 304 5.128 ms 
+
+Request: OPTIONS /clients/asdf at Thu Jul 14 2022 00:03:08 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.184 ms 
+
+Request: GET /clients/asdf at Thu Jul 14 2022 00:03:08 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 304 9.022 ms 
+
+Request: OPTIONS /clients/ at Thu Jul 14 2022 00:03:09 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.194 ms 
+
+Request: GET /clients/ at Thu Jul 14 2022 00:03:09 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"data": [
+		{
+			"id": 1,
+			"companyName": "abel",
+			"cnpj": "12354678912345",
+			"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+			"createdAt": "2022-07-13T03:23:24.000Z",
+			"updatedAt": "2022-07-13T03:23:24.000Z"
+		}
+	]
+}
+Response: 304 4.529 ms 
+
+Request: OPTIONS /clients/asdfas at Thu Jul 14 2022 00:03:13 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.496 ms 
+
+Request: GET /clients/asdfas at Thu Jul 14 2022 00:03:13 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 200 4.493 ms 
+
+Request: GET /clients/ at Thu Jul 14 2022 00:03:14 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"data": [
+		{
+			"id": 1,
+			"companyName": "abel",
+			"cnpj": "12354678912345",
+			"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+			"createdAt": "2022-07-13T03:23:24.000Z",
+			"updatedAt": "2022-07-13T03:23:24.000Z"
+		}
+	]
+}
+Response: 304 4.077 ms 
+
+Request: OPTIONS /products/fasdfsaf at Thu Jul 14 2022 00:03:16 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.249 ms 
+
+Request: GET /products/fasdfsaf at Thu Jul 14 2022 00:03:17 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 200 4.118 ms 
+
+Request: OPTIONS /products/ at Thu Jul 14 2022 00:04:19 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.182 ms 
+
+Request: GET /products/ at Thu Jul 14 2022 00:04:19 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"data": ""
+}
+Response: 304 1.262 ms 
+
+Request: OPTIONS /products/asdfasd at Thu Jul 14 2022 00:22:42 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.192 ms 
+
+Request: GET /products/asdfasd at Thu Jul 14 2022 00:22:42 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 200 10.431 ms 
+
+Request: OPTIONS /products/ at Thu Jul 14 2022 00:22:43 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.182 ms 
+
+Request: GET /products/ at Thu Jul 14 2022 00:22:43 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"data": ""
+}
+Response: 304 1.163 ms 
+
+Request: OPTIONS /products/df at Thu Jul 14 2022 00:22:47 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.451 ms 
+
+Request: GET /products/df at Thu Jul 14 2022 00:22:47 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 200 5.042 ms 
+
+Request: OPTIONS /products/ at Thu Jul 14 2022 00:22:48 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.181 ms 
+
+Request: GET /products/ at Thu Jul 14 2022 00:22:48 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+{
+	"data": ""
+}
+Response: 304 0.766 ms 
+
+Request: OPTIONS /products/thi at Thu Jul 14 2022 00:22:49 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.169 ms 
+
+Request: GET /products/thi at Thu Jul 14 2022 00:22:49 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 200 4.158 ms 
+
+Request: OPTIONS /products/thiago%20freire at Thu Jul 14 2022 00:22:51 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.196 ms 
+
+Request: GET /products/thiago%20freire at Thu Jul 14 2022 00:22:51 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+[
+	{
+		"codeProduct": 1,
+		"name": "Thiago Freire",
+		"description": "refrigerante",
+		"measurementUnit": "litro",
+		"pricePurchase": 3,
+		"priceSales": 9,
+		"createdAt": "2022-07-14T02:54:03.000Z",
+		"updatedAt": "2022-07-14T02:54:03.000Z"
+	}
+]
+Response: 304 4.277 ms 
+
+Request: OPTIONS /products/thiago%20freire at Thu Jul 14 2022 00:23:19 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.233 ms 
+
+Request: GET /products/thiago%20freire at Thu Jul 14 2022 00:23:19 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+[
+	{
+		"codeProduct": 1,
+		"name": "Thiago Freire",
+		"description": "refrigerante",
+		"measurementUnit": "litro",
+		"pricePurchase": 3,
+		"priceSales": 9,
+		"createdAt": "2022-07-14T02:54:03.000Z",
+		"updatedAt": "2022-07-14T02:54:03.000Z"
+	}
+]
+Response: 304 12.929 ms 
+
+Request: OPTIONS /clients/abe at Thu Jul 14 2022 00:23:50 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.152 ms 
+
+Request: GET /clients/abe at Thu Jul 14 2022 00:23:50 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 200 10.525 ms 
+
+Request: OPTIONS /clients/abel at Thu Jul 14 2022 00:23:51 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.160 ms 
+
+Request: GET /clients/abel at Thu Jul 14 2022 00:23:51 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+[
+	{
+		"id": 1,
+		"companyName": "abel",
+		"cnpj": "12354678912345",
+		"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+		"createdAt": "2022-07-13T03:23:24.000Z",
+		"updatedAt": "2022-07-13T03:23:24.000Z"
+	}
+]
+Response: 304 4.314 ms 
+
+Request: OPTIONS /sales-orders at Thu Jul 14 2022 00:23:54 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.172 ms 
+
+Request: POST /sales-orders at Thu Jul 14 2022 00:23:54 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"clientId": "1"
+}
+Response Body:
+{
+	"error": "Produto é necessário à criação do pedido de venda"
+}
+Response: 400 22.440 ms 
+
+Request: OPTIONS /clients/abel at Thu Jul 14 2022 00:25:25 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.180 ms 
+
+Request: GET /clients/abel at Thu Jul 14 2022 00:25:25 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+[
+	{
+		"id": 1,
+		"companyName": "abel",
+		"cnpj": "12354678912345",
+		"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+		"createdAt": "2022-07-13T03:23:24.000Z",
+		"updatedAt": "2022-07-13T03:23:24.000Z"
+	}
+]
+Response: 304 12.037 ms 
+
+Request: OPTIONS /products/thiago%20freire at Thu Jul 14 2022 00:25:28 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.151 ms 
+
+Request: GET /products/thiago%20freire at Thu Jul 14 2022 00:25:28 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+[
+	{
+		"codeProduct": 1,
+		"name": "Thiago Freire",
+		"description": "refrigerante",
+		"measurementUnit": "litro",
+		"pricePurchase": 3,
+		"priceSales": 9,
+		"createdAt": "2022-07-14T02:54:03.000Z",
+		"updatedAt": "2022-07-14T02:54:03.000Z"
+	}
+]
+Response: 304 4.319 ms 
+
+Request: OPTIONS /sales-orders at Thu Jul 14 2022 00:25:34 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.192 ms 
+
+Request: POST /sales-orders at Thu Jul 14 2022 00:25:34 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"clientId": "1"
+}
+Response Body:
+{
+	"error": "Produto é necessário à criação do pedido de venda"
+}
+Response: 400 1.665 ms 
+
+Request: OPTIONS /clients/a at Thu Jul 14 2022 00:26:24 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.153 ms 
+
+Request: GET /clients/a at Thu Jul 14 2022 00:26:24 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 200 10.361 ms 
+
+Request: OPTIONS /clients/abel at Thu Jul 14 2022 00:26:26 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.160 ms 
+
+Request: GET /clients/abel at Thu Jul 14 2022 00:26:26 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+[
+	{
+		"id": 1,
+		"companyName": "abel",
+		"cnpj": "12354678912345",
+		"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+		"createdAt": "2022-07-13T03:23:24.000Z",
+		"updatedAt": "2022-07-13T03:23:24.000Z"
+	}
+]
+Response: 304 4.482 ms 
+
+Request: OPTIONS /products/thiago%20freire at Thu Jul 14 2022 00:26:29 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.160 ms 
+
+Request: GET /products/thiago%20freire at Thu Jul 14 2022 00:26:29 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+[
+	{
+		"codeProduct": 1,
+		"name": "Thiago Freire",
+		"description": "refrigerante",
+		"measurementUnit": "litro",
+		"pricePurchase": 3,
+		"priceSales": 9,
+		"createdAt": "2022-07-14T02:54:03.000Z",
+		"updatedAt": "2022-07-14T02:54:03.000Z"
+	}
+]
+Response: 304 3.988 ms 
+
+Request: OPTIONS /sales-orders at Thu Jul 14 2022 00:26:33 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.238 ms 
+
+Request: POST /sales-orders at Thu Jul 14 2022 00:26:33 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"clientId": "1"
+}
+Response Body:
+{
+	"error": "Produto é necessário à criação do pedido de venda"
+}
+Response: 400 1.734 ms 
+
+Request: OPTIONS /sales-orders at Thu Jul 14 2022 00:26:57 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 1.565 ms 
+
+Request: POST /sales-orders at Thu Jul 14 2022 00:26:57 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"clientId": "1"
+}
+Response Body:
+{
+	"error": "Produto é necessário à criação do pedido de venda"
+}
+Response: 400 1.387 ms 
+
+Request: OPTIONS /clients/abel at Thu Jul 14 2022 00:28:49 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.205 ms 
+
+Request: GET /clients/abel at Thu Jul 14 2022 00:28:49 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+[
+	{
+		"id": 1,
+		"companyName": "abel",
+		"cnpj": "12354678912345",
+		"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+		"createdAt": "2022-07-13T03:23:24.000Z",
+		"updatedAt": "2022-07-13T03:23:24.000Z"
+	}
+]
+Response: 304 8.713 ms 
+
+Request: OPTIONS /products/thiago%20freire at Thu Jul 14 2022 00:28:52 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.160 ms 
+
+Request: GET /products/thiago%20freire at Thu Jul 14 2022 00:28:52 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+[
+	{
+		"codeProduct": 1,
+		"name": "Thiago Freire",
+		"description": "refrigerante",
+		"measurementUnit": "litro",
+		"pricePurchase": 3,
+		"priceSales": 9,
+		"createdAt": "2022-07-14T02:54:03.000Z",
+		"updatedAt": "2022-07-14T02:54:03.000Z"
+	}
+]
+Response: 304 3.530 ms 
+
+Request: OPTIONS /sales-orders at Thu Jul 14 2022 00:29:01 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.159 ms 
+
+Request: POST /sales-orders at Thu Jul 14 2022 00:29:01 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"clientId": "1"
+}
+Response Body:
+{
+	"error": "Produto é necessário à criação do pedido de venda"
+}
+Response: 400 2.090 ms 
+
+Request: OPTIONS /sales-orders at Thu Jul 14 2022 00:29:26 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.173 ms 
+
+Request: POST /sales-orders at Thu Jul 14 2022 00:29:26 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"clientId": "1"
+}
+Response Body:
+{
+	"error": "Produto é necessário à criação do pedido de venda"
+}
+Response: 400 1.001 ms 
+
+Request: OPTIONS /clients/abel at Thu Jul 14 2022 00:30:19 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.180 ms 
+
+Request: GET /clients/abel at Thu Jul 14 2022 00:30:19 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+[
+	{
+		"id": 1,
+		"companyName": "abel",
+		"cnpj": "12354678912345",
+		"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+		"createdAt": "2022-07-13T03:23:24.000Z",
+		"updatedAt": "2022-07-13T03:23:24.000Z"
+	}
+]
+Response: 304 8.374 ms 
+
+Request: OPTIONS /products/thiago%20freire at Thu Jul 14 2022 00:30:24 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.158 ms 
+
+Request: GET /products/thiago%20freire at Thu Jul 14 2022 00:30:24 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response Body:
+[
+	{
+		"codeProduct": 1,
+		"name": "Thiago Freire",
+		"description": "refrigerante",
+		"measurementUnit": "litro",
+		"pricePurchase": 3,
+		"priceSales": 9,
+		"createdAt": "2022-07-14T02:54:03.000Z",
+		"updatedAt": "2022-07-14T02:54:03.000Z"
+	}
+]
+Response: 304 4.239 ms 
+
+Request: OPTIONS /sales-orders at Thu Jul 14 2022 00:30:40 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Response: 204 0.153 ms 
+
+Request: POST /sales-orders at Thu Jul 14 2022 00:30:40 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36 Edg/103.0.1264.49
+Request Body:
+{
+	"clientId": "1",
+	"products": [
+		{
+			"codeProduct": "1",
+			"priceSales": "8.99",
+			"quantity": "100"
+		}
+	]
+}
+Response Body:
+{
+	"data": {
+		"id": 41,
+		"status": "EM PROCESSO",
+		"createdAt": "2022-07-14T03:30:40.000Z",
+		"updatedAt": "2022-07-14T03:30:40.000Z",
+		"clientId": 1,
+		"product-sales": []
+	}
+}
+Response: 201 39.414 ms 

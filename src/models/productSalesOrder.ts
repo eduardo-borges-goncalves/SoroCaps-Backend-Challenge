@@ -2,7 +2,6 @@ const { DataTypes } = require('sequelize');
 import { db } from ".";
 import { SalesOrderModel } from "./salesOrder";
 
-
 export const ProductSalesOrderModel = db.sequelize.define('product-sales', {
   codeProduct: {
     type: DataTypes.INTEGER,
