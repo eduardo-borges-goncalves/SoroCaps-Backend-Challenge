@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "test",
-    "start": "nodemon src/index.ts",
+    "start": "nodemon src/index.ts", 
     "build": "npm start build"
   },
   "repository": {
