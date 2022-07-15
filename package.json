@@ -6,7 +6,7 @@
   "scripts": {
     "test": "test",
     "start": "nodemon src/index.ts",
-    "build": "rm -rf build/ && prettier --write src/ && tsc"
+    "build": "npm start build"
   },
   "repository": {
     "type": "git",
