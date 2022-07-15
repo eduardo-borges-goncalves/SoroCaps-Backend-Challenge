@@ -1,4 +1,4 @@
-import { UserModel } from "../models/user";
+import { UserModel } from "../../models/user";
 import * as bcrypt from "bcrypt"
 import { createToken } from "./jwt";
 
