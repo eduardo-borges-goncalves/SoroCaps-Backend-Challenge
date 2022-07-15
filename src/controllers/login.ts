@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from "express";
-import { login } from "../services/login";
+import { login } from "../services/Auth/login";
 
 export const signIn = async (req: Request, res: Response, next: NextFunction) => {
     try {

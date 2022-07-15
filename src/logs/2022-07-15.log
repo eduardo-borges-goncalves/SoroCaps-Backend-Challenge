@@ -1,0 +1,494 @@
+
+Request: POST /sales-orders at Fri Jul 15 2022 00:03:30 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: insomnia/2022.4.2
+Request Body:
+{
+	"clientId": "1",
+	"products": [
+		{
+			"quantity": "70",
+			"priceSales": "100",
+			"codeProduct": "1"
+		},
+		{
+			"quantity": "50",
+			"priceSales": "8",
+			"codeProduct": "1"
+		}
+	]
+}
+Response Body:
+{
+	"message": "Token inválido!"
+}
+Response: 401 27.615 ms 
+
+Request: POST /login at Fri Jul 15 2022 00:03:35 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: insomnia/2022.4.2
+Request Body:
+{
+	"userLogin": "eduardo",
+	"password": "12345678"
+}
+Response Body:
+{
+	"id": 1,
+	"name": "eduardo",
+	"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY1Nzg1NDIxNSwiZXhwIjoxNjU3ODU3ODE1fQ.Ezf9L6hylLHDSj3q2VXWn2JqOY35ZM2iCG-z5IV1Ksg"
+}
+Response: 200 40.076 ms 
+
+Request: POST /sales-orders at Fri Jul 15 2022 00:03:45 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: insomnia/2022.4.2
+Request Body:
+{
+	"clientId": "1",
+	"products": [
+		{
+			"quantity": "70",
+			"priceSales": "100",
+			"codeProduct": "1"
+		},
+		{
+			"quantity": "50",
+			"priceSales": "8",
+			"codeProduct": "1"
+		}
+	]
+}
+Response Body:
+O Preço de venda do produto Thiago Freire não pode ser inferior ao cadastrado: R$ 9,00.
+Response: 409 46.399 ms 
+
+Request: POST /sales-orders at Fri Jul 15 2022 00:04:35 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: insomnia/2022.4.2
+Request Body:
+{
+	"clientId": "1",
+	"products": [
+		{
+			"quantity": "70",
+			"priceSales": "100",
+			"codeProduct": "1"
+		},
+		{
+			"quantity": "50",
+			"priceSales": "8",
+			"codeProduct": "1"
+		}
+	]
+}
+Response Body:
+O Preço de venda do produto Thiago Freire não pode ser inferior ao cadastrado: R$ 9,00.
+Response: 409 73.995 ms 
+
+Request: POST /sales-orders at Fri Jul 15 2022 00:05:18 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: insomnia/2022.4.2
+Request Body:
+{
+	"clientId": "1",
+	"products": [
+		{
+			"quantity": "70",
+			"priceSales": "100",
+			"codeProduct": "1"
+		},
+		{
+			"quantity": "50",
+			"priceSales": "8",
+			"codeProduct": "1"
+		}
+	]
+}
+Response Body:
+O Preço de venda do produto Thiago Freire não pode ser inferior ao cadastrado: R$ 9,00.
+Response: 409 219.246 ms 
+
+Request: POST /sales-orders at Fri Jul 15 2022 00:06:49 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: insomnia/2022.4.2
+Request Body:
+{
+	"clientId": "1",
+	"products": [
+		{
+			"quantity": "70",
+			"priceSales": "100",
+			"codeProduct": "1"
+		},
+		{
+			"quantity": "50",
+			"priceSales": "8",
+			"codeProduct": "1"
+		}
+	]
+}
+Response Body:
+O Preço de venda do produto Thiago Freire não pode ser inferior ao cadastrado: R$ 9,00.
+Response: 409 206.597 ms 
+
+Request: POST /sales-orders at Fri Jul 15 2022 00:07:27 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: insomnia/2022.4.2
+Request Body:
+{
+	"clientId": "1",
+	"products": [
+		{
+			"quantity": "70",
+			"priceSales": "1",
+			"codeProduct": "1"
+		},
+		{
+			"quantity": "50",
+			"priceSales": "8",
+			"codeProduct": "1"
+		}
+	]
+}
+Response Body:
+O Preço de venda do produto Thiago Freire não pode ser inferior ao cadastrado: R$ 9,00.
+Response: 409 31.805 ms 
+
+Request: POST /sales-orders at Fri Jul 15 2022 00:09:20 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: insomnia/2022.4.2
+Request Body:
+{
+	"clientId": "1",
+	"products": [
+		{
+			"quantity": "70",
+			"priceSales": "1",
+			"codeProduct": "1"
+		},
+		{
+			"quantity": "50",
+			"priceSales": "8",
+			"codeProduct": "1"
+		}
+	]
+}
+Response Body:
+[
+	{
+		"id": 1,
+		"companyName": "abel",
+		"cnpj": "12354678912345",
+		"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+		"createdAt": "2022-07-13T03:23:24.000Z",
+		"updatedAt": "2022-07-13T03:23:24.000Z",
+		"sales-orders": [
+			{
+				"id": 105,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-15T03:09:20.000Z",
+				"updatedAt": "2022-07-15T03:09:20.000Z",
+				"clientId": 1,
+				"product-sales": []
+			},
+			{
+				"id": 104,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-15T03:07:27.000Z",
+				"updatedAt": "2022-07-15T03:07:27.000Z",
+				"clientId": 1,
+				"product-sales": []
+			},
+			{
+				"id": 103,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-15T03:06:49.000Z",
+				"updatedAt": "2022-07-15T03:06:49.000Z",
+				"clientId": 1,
+				"product-sales": []
+			},
+			{
+				"id": 102,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-15T03:05:17.000Z",
+				"updatedAt": "2022-07-15T03:05:17.000Z",
+				"clientId": 1,
+				"product-sales": []
+			},
+			{
+				"id": 101,
+				"s
+...
+Response: 201 149.978 ms 
+
+Request: POST /sales-orders at Fri Jul 15 2022 00:10:28 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: insomnia/2022.4.2
+Request Body:
+{
+	"clientId": "1",
+	"products": [
+		{
+			"quantity": "70",
+			"priceSales": "1",
+			"codeProduct": "1"
+		},
+		{
+			"quantity": "50",
+			"priceSales": "8",
+			"codeProduct": "1"
+		}
+	]
+}
+Response Body:
+[
+	{
+		"id": 1,
+		"companyName": "abel",
+		"cnpj": "12354678912345",
+		"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+		"createdAt": "2022-07-13T03:23:24.000Z",
+		"updatedAt": "2022-07-13T03:23:24.000Z",
+		"sales-orders": [
+			{
+				"id": 106,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-15T03:10:28.000Z",
+				"updatedAt": "2022-07-15T03:10:28.000Z",
+				"clientId": 1,
+				"product-sales": []
+			},
+			{
+				"id": 105,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-15T03:09:20.000Z",
+				"updatedAt": "2022-07-15T03:09:20.000Z",
+				"clientId": 1,
+				"product-sales": [
+					{
+						"id": 123,
+						"codeProduct": 1,
+						"priceSales": 1,
+						"quantity": 70,
+						"createdAt": "2022-07-15T03:09:20.000Z",
+						"updatedAt": "2022-07-15T03:09:20.000Z",
+						"salesOrderId": 105
+					},
+					{
+						"id": 124,
+						"codeProduct": 1,
+						"priceSales": 8,
+						"quantity": 50,
+						"createdAt": "2022-07-15T03:09:20.000Z",
+						"updatedAt": "2022-07-15T03:09:20.000Z",
+	
+...
+Response: 201 274.002 ms 
+
+Request: POST /sales-orders at Fri Jul 15 2022 00:13:01 GMT-0300, IP: ::1, User Agent: insomnia/2022.4.2
+Request Body:
+{
+	"clientId": "1",
+	"products": [
+		{
+			"quantity": "70",
+			"priceSales": "1",
+			"codeProduct": "1"
+		},
+		{
+			"quantity": "50",
+			"priceSales": "8",
+			"codeProduct": "1"
+		}
+	]
+}
+Response Body:
+O Preço de venda do produto Thiago Freire não pode ser inferior ao cadastrado: R$ 9,00.
+Response: 409 117.593 ms 
+
+Request: POST /sales-orders at Fri Jul 15 2022 00:13:08 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: insomnia/2022.4.2
+Request Body:
+{
+	"clientId": "1",
+	"products": [
+		{
+			"quantity": "70",
+			"priceSales": "100",
+			"codeProduct": "1"
+		},
+		{
+			"quantity": "50",
+			"priceSales": "80",
+			"codeProduct": "1"
+		}
+	]
+}
+Response Body:
+[
+	{
+		"id": 1,
+		"companyName": "abel",
+		"cnpj": "12354678912345",
+		"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+		"createdAt": "2022-07-13T03:23:24.000Z",
+		"updatedAt": "2022-07-13T03:23:24.000Z",
+		"sales-orders": [
+			{
+				"id": 108,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-15T03:13:08.000Z",
+				"updatedAt": "2022-07-15T03:13:08.000Z",
+				"clientId": 1,
+				"product-sales": []
+			},
+			{
+				"id": 107,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-15T03:13:01.000Z",
+				"updatedAt": "2022-07-15T03:13:01.000Z",
+				"clientId": 1,
+				"product-sales": []
+			},
+			{
+				"id": 106,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-15T03:10:28.000Z",
+				"updatedAt": "2022-07-15T03:10:28.000Z",
+				"clientId": 1,
+				"product-sales": [
+					{
+						"id": 125,
+						"codeProduct": 1,
+						"priceSales": 1,
+						"quantity": 70,
+						"createdAt": "2022-07-15T03:10:28.000Z",
+						"updatedAt": "2022-07-15T03:10:28.000Z",
+						"salesOrderId": 106
+					},
+
+...
+Response: 201 77.598 ms 
+
+Request: POST /sales-orders at Fri Jul 15 2022 00:13:48 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: insomnia/2022.4.2
+Request Body:
+{
+	"clientId": "1",
+	"products": [
+		{
+			"quantity": "70",
+			"priceSales": "100",
+			"codeProduct": "1"
+		},
+		{
+			"quantity": "50",
+			"priceSales": "8",
+			"codeProduct": "1"
+		}
+	]
+}
+Response Body:
+O Preço de venda do produto Thiago Freire não pode ser inferior ao cadastrado: R$ 9,00.
+Response: 409 82.447 ms 
+
+Request: POST /sales-orders at Fri Jul 15 2022 00:25:40 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: insomnia/2022.4.2
+Request Body:
+{
+	"clientId": "1",
+	"products": [
+		{
+			"quantity": "70",
+			"priceSales": "100",
+			"codeProduct": "1"
+		},
+		{
+			"quantity": "50",
+			"priceSales": "9",
+			"codeProduct": "1"
+		}
+	]
+}
+Response Body:
+[
+	{
+		"id": 1,
+		"companyName": "abel",
+		"cnpj": "12354678912345",
+		"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+		"createdAt": "2022-07-13T03:23:24.000Z",
+		"updatedAt": "2022-07-13T03:23:24.000Z",
+		"sales-orders": [
+			{
+				"id": 110,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-15T03:25:40.000Z",
+				"updatedAt": "2022-07-15T03:25:40.000Z",
+				"clientId": 1,
+				"product-sales": []
+			}
+		]
+	}
+]
+Response: 201 89.008 ms 
+
+Request: POST /sales-orders at Fri Jul 15 2022 00:26:27 GMT-0300, IP: ::1, User Agent: insomnia/2022.4.2
+Request Body:
+{
+	"clientId": "1",
+	"products": [
+		{
+			"quantity": "70",
+			"priceSales": "100",
+			"codeProduct": "1"
+		},
+		{
+			"quantity": "50",
+			"priceSales": "9",
+			"codeProduct": "1"
+		}
+	]
+}
+Response Body:
+[
+	{
+		"id": 1,
+		"companyName": "abel",
+		"cnpj": "12354678912345",
+		"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+		"createdAt": "2022-07-13T03:23:24.000Z",
+		"updatedAt": "2022-07-13T03:23:24.000Z",
+		"sales-orders": [
+			{
+				"id": 111,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-15T03:26:27.000Z",
+				"updatedAt": "2022-07-15T03:26:27.000Z",
+				"clientId": 1,
+				"product-sales": []
+			}
+		]
+	}
+]
+Response: 201 75.365 ms 
+
+Request: POST /sales-orders at Fri Jul 15 2022 00:26:31 GMT-0300, IP: ::1, User Agent: insomnia/2022.4.2
+Request Body:
+{
+	"clientId": "1",
+	"products": [
+		{
+			"quantity": "70",
+			"priceSales": "100",
+			"codeProduct": "1"
+		},
+		{
+			"quantity": "50",
+			"priceSales": "9",
+			"codeProduct": "1"
+		}
+	]
+}
+Response Body:
+[
+	{
+		"id": 1,
+		"companyName": "abel",
+		"cnpj": "12354678912345",
+		"address": "rua 6 qd 3 lt 19 csa 1 lourdes",
+		"createdAt": "2022-07-13T03:23:24.000Z",
+		"updatedAt": "2022-07-13T03:23:24.000Z",
+		"sales-orders": [
+			{
+				"id": 112,
+				"status": "EM PROCESSO",
+				"createdAt": "2022-07-15T03:26:31.000Z",
+				"updatedAt": "2022-07-15T03:26:31.000Z",
+				"clientId": 1,
+				"product-sales": []
+			}
+		]
+	}
+]
+Response: 201 23.526 ms 

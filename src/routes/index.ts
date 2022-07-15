@@ -3,7 +3,7 @@ import express from "express";
 import { getUsers, getUser, postUser, updateUser, deleteUser } from "../controllers/user";
 import { getClients, getClient, postClient, updateClient, deleteClient } from "../controllers/client";
 import { getProducts, getProduct, postProduct, updateProduct, deleteProduct } from "../controllers/product";
-import { getSalesOrders, getSalesOrder, postSalesOrder, updateSalesOrder, deleteSalesOrder } from "../controllers/salesOrder";
+import { getSalesOrders, postSalesOrder, updateSalesOrder, deleteSalesOrder } from "../controllers/salesOrder";
 
 import { signIn } from "../controllers/login";
 import { authentication } from "../middlewares/authentication";
@@ -33,7 +33,6 @@ router.put('/products/:id', updateProduct);
 router.delete('/products/:id', deleteProduct);
 
 router.get('/sales-orders', getSalesOrders);
-router.get('/sales-orders/:id', getSalesOrder);
 router.post('/sales-orders', postSalesOrder);
 router.put('/sales-orders/:id', updateSalesOrder);
 router.delete('/sales-orders/:id', deleteSalesOrder);

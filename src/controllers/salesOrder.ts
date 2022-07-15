@@ -1,19 +1,10 @@
 import { Request, Response, NextFunction } from "express"
 import { ClientModel } from "../models/client"
-import { ProductModel } from "../models/product"
 import { ProductSalesOrderModel } from "../models/productSalesOrder"
 import { SalesOrderModel } from "../models/salesOrder"
-
-type ProductSales = {
-    codeProduct: number,
-    priceSales: number
-    quantity: number,
-}
-interface SalesOrder {
-    saleOrderId: string,
-    client: string,
-    status: string,
-}
+import { createProductsSales } from "../services/SalesOrders/createProductsSales"
+import { isThePriceOk } from "../services/SalesOrders/priceSalesOrder"
+import { validationPrice } from "../services/SalesOrders/validationPrice"
 
 export const getSalesOrders = async (req: Request, res: Response, next: NextFunction) => {
     try {
@@ -34,24 +25,6 @@ export const getSalesOrders = async (req: Request, res: Response, next: NextFunc
     }
 }
 
-export const getSalesOrder = async (req: Request, res: Response, next: NextFunction) => {
-    try {
-        const salesOrder = await SalesOrderModel.findOne({
-            where: { id: req.params.id },
-            include: [{
-                model: ProductSalesOrderModel,
-            }]
-        })
-        if (!salesOrder) {
-            return res.status(400).send({ error: "Pedido de venda não encontrado" });
-        }
-
-        return res.status(200).json(salesOrder)
-    } catch (error: any) {
-        return next(new Error(error))
-    }
-}
-
 export const postSalesOrder = async (req: Request, res: Response, next: NextFunction) => {
     try {
         const { clientId, products } = req.body;
@@ -60,33 +33,17 @@ export const postSalesOrder = async (req: Request, res: Response, next: NextFunc
 
         const salesOrder = await SalesOrderModel.create({ clientId })
 
-        await products.map(async (product: ProductSales) => {
-            if (!product.codeProduct) res.status(400).send({ error: "Código do Produto é obrigatório" })
-            if (!product.quantity) res.status(400).send({ error: "Quantidade do Produto é obrigatório" })
-            if (!product.priceSales) res.status(400).send({ error: "Preço de venda do Produto é obrigatório" })
+        let priceIncorrect = await isThePriceOk(products)
+        validationPrice(priceIncorrect, res)
 
-            const productDB = await ProductModel.findOne({
-                where: { codeProduct: product.codeProduct }
-            })
-
-            if (product.priceSales < productDB.priceSales)
-                res.status(400).send({
-                    error: `O Preço de venda do produto ${productDB.name} não pode ser inferior ao cadastrado: ${productDB.priceSales}.`
-                })
-
-            await ProductSalesOrderModel.create({
-                codeProduct: product.codeProduct,
-                quantity: product.quantity,
-                priceSales: product.priceSales,
-                salesOrderId: salesOrder.id
-            })
-        })
-
-        const salesOrderWithProducts = await SalesOrderModel.findOne({
-            where: { id: salesOrder.id },
+        createProductsSales(res, products, salesOrder.id)
+        const salesOrderWithProducts = await ClientModel.findAll({
+            where: { id: clientId },
             include: [{
-                model: ProductSalesOrderModel,
-            }],
+                model: SalesOrderModel,
+                where: { id: salesOrder.id },
+                include: [ProductSalesOrderModel]
+            }]
         })
 
         return res.status(201).json(salesOrderWithProducts)
