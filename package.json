@@ -4,9 +4,10 @@
   "description": "backend challenge to job position",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon",
     "test": "test",
-    "start": "nodemon src/index.ts", 
-    "build": "tsc"
+    "build": "tsc",
+    "start": "node dist/index.js"
   },
   "repository": {
     "type": "git",
