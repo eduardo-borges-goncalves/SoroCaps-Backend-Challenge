@@ -47,8 +47,21 @@ export const postClient = async (req: Request, res: Response, next: NextFunction
         if (!companyName || !cnpj || !address) {
             res.status(400).send({ error: "Propriedade necessária à criação de cliente ausente" })
         }
+        const existClient = await ClientModel.findOne({
+            where: { cnpj: cnpj }
+        })
+
+        if (existClient)
+            return res.status(409).json(
+                `O CNPJ ${existClient.cnpj} já está cadastrado na base de dados. Favor informar novo CNPJ`
+            )
+        if (cnpj.length !== 14)
+            return res.status(409).json(
+                `O CNPJ deve conter 14 caracteres.`
+            )
+
         const client = await ClientModel.create({ companyName, cnpj, address })
-   
+
         return res.status(201).json({
             data: client
         })
@@ -75,9 +88,9 @@ export const updateClient = async (req: Request, res: Response, next: NextFuncti
                 address: address || client.address
             },
             {
-                where: {id: client.id},
+                where: { id: client.id },
                 returning: true,
-                plain: true,               
+                plain: true,
             }
         )
 

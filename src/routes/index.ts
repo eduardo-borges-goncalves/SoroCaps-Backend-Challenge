@@ -11,7 +11,7 @@ import { authentication } from "../middlewares/authentication";
 const router = express.Router();
 
 router.post('/login', signIn);
-
+ 
 router.use(authentication)
 
 router.get('/users', getUsers);
