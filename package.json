@@ -6,7 +6,7 @@
   "scripts": {
     "test": "test",
     "start": "nodemon src/index.ts", 
-    "build": "npm start build"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
